@@ -1,5 +1,3 @@
-# Headers Scanner HTTP
-
 Este es un proyecto simple hecho en Python para revisar algunas cabeceras de seguridad de una página web.
 
 ## ¿Cómo funciona?
@@ -15,21 +13,42 @@ El programa:
 
 Las cabeceras tienen diferentes valores dependiendo de su gravedad:
 
-- **Alta:** 30 puntos
-- **Media:** 15 puntos
-- **Baja:** 5 puntos
+- Alta → 30 puntos
+- Media → 15 puntos
+- Baja → 5 puntos
 
 ## Ejemplo
 
-```text
-URL a escanear: [https://github.com](https://github.com)
+```
+URL a escanear: https://github.com
 
 Respuesta HTTP: 200
 ----------------------------------------
-Strict-Transport-Security       presente
-Content-Security-Policy         presente
-X-Content-Type-Options          presente
-X-Frame-Options                 presente
-Referrer-Policy                 presente
+Strict-Transport-Security      presente
+Content-Security-Policy        presente
+X-Content-Type-Options        presente
+X-Frame-Options                presente
+Referrer-Policy                presente
 ----------------------------------------
 Puntaje: 100/100 — Nota: A
+```
+
+## Requisitos
+
+Necesitas Python y la librería `requests`.
+
+Para instalarla:
+
+```
+pip install requests
+```
+
+## Ejecutar
+
+```
+python header_scanner.py
+```
+
+Después solo tienes que introducir la URL que quieras revisar.
+
+Este proyecto lo hice como una forma de practicar Python, peticiones HTTP, listas, diccionarios, funciones y condicionales.
