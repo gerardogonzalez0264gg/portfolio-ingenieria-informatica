@@ -1,1 +1,7 @@
-Es un laboratorio para **respaldar y restaurar** la configuración y el sistema operativo (IOS) de un equipo Cisco en un **servidor TFTP** usando el comando `copy`.
+# Configurar el banner MOTD y habilitarlo en las líneas Telnet
+
+- **Banner:** Un aviso estático de advertencia o identificación que ves al acceder a un equipo.
+    
+- **MOTD:** Un banner temporal que se muestra inmediatamente antes de pedirte usuario y contraseña.
+	
+- VTY line: Cuando te conectas por SSH (puerto 22) al switch, la red te asigna **una de las líneas VTY libres** (por ejemplo, la `vty 0`). Si entra otra persona, usará la `vty 1`, y así sucesivamente.
