@@ -2,6 +2,10 @@
 
 ### Configurar el Protocolo EIGRP
 
+Proteger el intercambio de tablas de enrutamiento mediante la configuración de autenticación MD5 en EIGRP, asegurando que solo routers autorizados formen vecindad.
+
+--------------
+
 - **`router eigrp [ID]`:** Activa el protocolo de enrutamiento dinámico. El ID (por ejemplo, `10`) debe ser el mismo en todos los routers de la red para que se hablen.
     
 - **`network [Dirección_Red]`:** Le dice al protocolo qué redes tiene conectadas el router para que se las enseñe a sus vecinos.
