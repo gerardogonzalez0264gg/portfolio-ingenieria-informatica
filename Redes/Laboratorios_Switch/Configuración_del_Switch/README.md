@@ -2,7 +2,9 @@
 
 Este laboratorio básico enseña las configuraciones fundamentales para facilitar el trabajo con el switch y prevenir errores comunes durante su operación.
 
-vlan 1 es para el mismo switch
+Una cosa para tener en mente es que, vlan 1 es para el mismo switch
+
+# Comandos clave
 
 write: guarda las configuraciones dentro del switch aunque los apagues
 
