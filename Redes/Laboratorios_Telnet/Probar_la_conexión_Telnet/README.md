@@ -1,5 +1,9 @@
 # Configuración de Telnet en Cisco Packet Tracer
 
+Habilitar la gestión remota del router mediante la configuración de las líneas VTY y la asignación de contraseñas de acceso para permitir conexiones vía Telnet.
+
+-------------------
+
 Putty: uno de los clientes gratis mas famoso de telnet, usado por empresas.
 
 contraseña -> enable password cisco
