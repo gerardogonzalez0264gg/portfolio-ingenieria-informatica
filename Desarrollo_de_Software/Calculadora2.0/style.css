@@ -1,0 +1,48 @@
+body{
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.calculadora{
+
+    background-color:rgb(34, 42, 42);
+    width: 150px;
+    height: 170px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+.botons{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:10px;
+    margin:10px;
+    
+}
+
+button{
+
+    cursor: pointer;
+}
+
+input{
+    width: 140px;
+}
+
+h1{
+
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
