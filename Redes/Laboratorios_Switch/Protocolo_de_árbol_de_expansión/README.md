@@ -29,6 +29,6 @@ Switch(config)#spanning-tree mode rapid-pvst
     
 - **¿Para qué sirve?** Acelera masivamente el tiempo de recuperación de la red ante fallos de enlaces o switches. Con el STP tradicional la red tarda entre 30 y 50 segundos en reajustarse; con Rapid PVST+ se logra casi al instante (en un par de segundos).
 
-- SPT: Es un protocolo de Capa 2 que **bloquea puertos y enlaces redundantes** en un switch para evitar bucles infinitos de red.
+SPT: Es un protocolo de Capa 2 que **bloquea puertos y enlaces redundantes** en un switch para evitar bucles infinitos de red.
 
 **32768** = La prioridad "neutra" que traen los switches por defecto para STP.
