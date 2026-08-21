@@ -1,0 +1,46 @@
+<html>
+
+<head>
+
+    <title>calculator</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+</head>
+
+
+<body>
+
+    <h1>Calculator</h1>
+
+    <form method="POST">
+
+        <input type="number" name="a" placeholder="Ingrese 1 numero" required>
+        <input type="number" name="b" placeholder="Ingrese otro numero" required>
+
+
+        <select name="operacion">
+
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">multiplicacion</option>
+            <option value="division">division</option>
+            <option value="porcentaje">porcentaje</option>
+
+        </select>
+
+        <button type="submit">calcular</button>  
+        
+        {% if res %}
+          El resultado es: {{res}}
+        {% endif %}
+
+    </form>
+
+    
+
+    
+
+</body>
+
+
+</html>
