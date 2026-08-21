@@ -1,6 +1,6 @@
 # Red STP: Explicación del protocolo Spanning Tree y su configuración.
 
-La finalidad de esto es optimizar la convergencia de la red mediante la designación del Root Bridge y el uso de Rapid PVST+.
+La finalidad de esto es optimizar la recuperación de la red mediante la designación del Root Bridge y el uso de Rapid PVST+.
 
 ### **Task 1: Forzar al Switch 1 a ser el Root Bridge (Puente Raíz)**
 
