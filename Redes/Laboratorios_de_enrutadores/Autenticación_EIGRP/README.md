@@ -1,7 +1,5 @@
 # Autenticación EIGRP (router-2)
 
-### Configurar el Protocolo EIGRP
-
 Proteger el intercambio de tablas de enrutamiento mediante la configuración de autenticación MD5 en EIGRP, asegurando que solo routers autorizados formen vecindad.
 
 --------------
