@@ -1,6 +1,6 @@
 # configuración del Switch
 
-Este laboratorio básico nos enseña acerca de las configuraciones, para facilitar la configuración y evitar alguno problemas a la hora de trabajar con el switch.
+Este laboratorio básico enseña las configuraciones fundamentales para facilitar el trabajo con el switch y prevenir errores comunes durante su operación.
 
 vlan 1 es para el mismo switch
 
