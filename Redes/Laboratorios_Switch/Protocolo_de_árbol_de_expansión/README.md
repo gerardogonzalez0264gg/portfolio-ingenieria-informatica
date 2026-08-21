@@ -1,5 +1,7 @@
 # Red STP: Explicación del protocolo Spanning Tree y su configuración.
 
+Optimizar la convergencia de la red mediante la designación del Root Bridge y el uso de Rapid PVST+.
+
 ### **Task 1: Forzar al Switch 1 a ser el Root Bridge (Puente Raíz)**
 
 Plaintext
