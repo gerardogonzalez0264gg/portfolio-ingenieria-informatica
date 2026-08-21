@@ -1,5 +1,7 @@
 # configuración del Switch
 
+Este laboratorio básico nos enseña acerca de las configuraciones, para facilitar su uso y evitar alguno problemas a la hora de configurar el switch.
+
 vlan 1 es para el mismo switch
 
 write: guarda las configuraciones dentro del switch aunque los apagues
