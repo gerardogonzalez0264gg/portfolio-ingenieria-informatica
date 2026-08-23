@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        <title>inventarioGG</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="primera">
+            <div class="titulol"><h1>Login</h1></div>
+            <form method="post" action="/">
+                <div class="fila1">
+                    <label>Usuario</label>
+                    <div class="ingreso1">
+                      <input type="text" name="nombre" required>
+                    </div>    
+                </div>
+
+                <div class="fila2">
+                    <label>Contraseña</label>
+                    <div class="ingreso2">
+                        <input type="password" name="contraseña" required>
+                    </div>
+                </div>
+                
+                <button type="submit" class="boton">Ingresar</button>
+                
+            </form>
+        </div>
+        {% if error %}
+            <p>{{error}}</p>
+        {% endif %}
+
+    </body>
+</html>

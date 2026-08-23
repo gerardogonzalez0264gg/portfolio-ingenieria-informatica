@@ -1,0 +1,45 @@
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        </head>
+        <body>
+            <div class="contenedor-inv">
+                <h1>Inventario</h1>
+                
+                <form method="POST">
+                    <h2>Añadir producto</h2>
+                    <div class="campos-grupo">
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" required>
+                        
+                        <label>Cantidad</label>
+                        <input type="text" name="cantidad" required>
+                        
+                        <label>Precio</label>
+                        <input type="text" name="precio" required>
+                        
+                        <button type="submit">Añadir</button>
+                    </div>
+                </form>
+
+                <h2>Productos</h2>
+                <table class="tabla-inventario">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                    </tr>
+                    {% for tipo in producto %}
+                    <tr>
+                        <td>{{tipo.id}}</td>
+                        <td>{{tipo.nombre}}</td>
+                        <td>{{tipo.cantidad}}</td>
+                        <td>{{tipo.precio}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </body>
+    </html>
