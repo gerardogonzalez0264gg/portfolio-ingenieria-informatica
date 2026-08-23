@@ -2,6 +2,12 @@
 
 Bienvenido a mi portafolio de **Ingeniería en Informática**. En este repositorio recopilo proyectos, trabajos académicos y actividades prácticas desarrolladas durante mi formación, con el objetivo de documentar mi aprendizaje y mostrar las habilidades que he ido adquiriendo en distintas áreas de la informática.
 
+## 🎯 Objetivo
+
+El objetivo de este repositorio es **documentar mi progreso como estudiante de Ingeniería en Informática**, mostrando proyectos académicos y personales que reflejan los conocimientos que he adquirido en programación, desarrollo web, redes, bases de datos, análisis de datos y ciberseguridad.
+
+Este portafolio se encuentra en constante actualización a medida que continúo desarrollando nuevos proyectos y adquiriendo conocimientos.
+
 ## 📌 Sobre el repositorio
 
 El repositorio reúne proyectos relacionados con:
@@ -86,12 +92,6 @@ Entre los trabajos realizados se encuentran análisis de datos, limpieza de info
 * GitHub
 * XAMPP
 * Servidores locales
-
-## 🎯 Objetivo
-
-El objetivo de este repositorio es **documentar mi progreso como estudiante de Ingeniería en Informática**, mostrando proyectos académicos y personales que reflejan los conocimientos que he adquirido en programación, desarrollo web, redes, bases de datos, análisis de datos y ciberseguridad.
-
-Este portafolio se encuentra en constante actualización a medida que continúo desarrollando nuevos proyectos y adquiriendo conocimientos.
 
 ## 🚀 En constante aprendizaje
 
