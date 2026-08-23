@@ -9,5 +9,5 @@ def reloj(segundos, mensaje):
     winsound.PlaySound("alarma.wav", winsound.SND_FILENAME)
 
 while True:
-    reloj(10,"Estudio")
-    reloj(5,"Descanso")
+    reloj(1800,"Estudio")
+    reloj(300,"Descanso")
