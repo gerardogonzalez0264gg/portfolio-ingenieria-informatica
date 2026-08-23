@@ -10,8 +10,8 @@ El objetivo de esta sección es documentar mi aprendizaje mediante proyectos pr�
 
 ## 📁 Proyectos
 
+- ESP32-RTOS-RFID
 - Adivina el número
 - Calculadora de estudio
 - Creador de contraseñas
 - Menú de estudiantes
-- ESP32-RTOS-RFID
