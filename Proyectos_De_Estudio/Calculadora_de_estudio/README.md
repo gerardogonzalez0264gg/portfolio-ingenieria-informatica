@@ -1,3 +1,3 @@
 # Alarma de estudio
 
-Creé un programa con Python, el cual permite ejecutar un ruido una vez haya transcurrido un cierto período de tiempo.
+Creé un programa con Python, el cual permite ejecutar un sonido una vez haya transcurrido un cierto período de tiempo.
