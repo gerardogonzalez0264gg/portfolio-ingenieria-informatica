@@ -10,7 +10,6 @@ El repositorio reúne proyectos relacionados con:
 * 🌐 **Redes**
 * 💻 **Desarrollo de software y desarrollo web**
 * 📊 **Análisis y minería de datos**
-* 🗄️ **Bases de datos**
 * 🐍 **Programación**
 * 🔐 **Práctica de seguridad informática mediante TryHackMe**
 
