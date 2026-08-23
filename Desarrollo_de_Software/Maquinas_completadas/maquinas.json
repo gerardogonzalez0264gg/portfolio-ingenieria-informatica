@@ -1,0 +1,210 @@
+[
+  {
+    "Nombre": "RootMe",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Gobuster",
+      "Netcat"
+    ]
+  },
+  {
+    "Nombre": "Agent Sudo",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Burp Suite",
+      "Hydra",
+      "John the Ripper",
+      "Binwalk",
+      "Steghide"
+    ]
+  },
+  {
+    "Nombre": "Pickle Rick",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Gobuster",
+      "Nikto",
+      "Browser Developer Tools"
+    ]
+  },
+  {
+    "Nombre": "DNS in detail",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "dig",
+      "nslookup"
+    ]
+  },
+  {
+    "Nombre": "0x41haz",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "file",
+      "strings",
+      "checksec",
+      "Ghidra",
+      "xxd"
+    ]
+  },
+  {
+    "Nombre": "Corridor",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Burp Suite",
+      "curl"
+    ]
+  },
+  {
+    "Nombre": "Agent T",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Burp Suite",
+      "curl"
+    ]
+  },
+  {
+    "Nombre": "Offensive Security intro",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Gobuster",
+      "Burp Suite"
+    ]
+  },
+  {
+    "Nombre": "Dig Dug",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "dig",
+      "nslookup"
+    ]
+  },
+  {
+    "Nombre": "Lo-Fi",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Gobuster",
+      "curl"
+    ]
+  },
+  {
+    "Nombre": "CyberHeroes",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Gobuster",
+      "Burp Suite"
+    ]
+  },
+  {
+    "Nombre": "MD2PDF",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Burp Suite",
+      "Feroxbuster",
+      "curl"
+    ]
+  },
+  {
+    "Nombre": "TakeOver",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Gobuster",
+      "ffuf",
+      "dig",
+      "curl"
+    ]
+  },
+  {
+    "Nombre": "Compiled",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "file",
+      "strings",
+      "Ghidra"
+    ]
+  },
+  {
+    "Nombre": "W1seGuy",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Python",
+      "Netcat",
+      "XOR"
+    ]
+  },
+  {
+    "Nombre": "Fools Mate",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Burp Suite",
+      "curl"
+    ]
+  },
+  {
+    "Nombre": "Dreaming",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Gobuster",
+      "Burp Suite",
+      "MySQL",
+      "Python"
+    ]
+  },
+  {
+    "Nombre": "The Phishing Pond",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Navegador web"
+    ]
+  },
+  {
+    "Nombre": "Missing Person",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Google",
+      "Google Images",
+      "ExifTool",
+      "Google Maps",
+      "Redes sociales"
+    ]
+  },
+  {
+    "Nombre": "Room 404",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Gobuster",
+      "wget",
+      "Git"
+    ]
+  }
+]
