@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio - Portal Informativo{% endblock %}
+
+{% block content %}
+<section class="feed">
+    <h1>Noticias Recientes</h1>
+    
+    {% if not noticias %}
+        <p>No hay noticias publicadas aún.</p>
+    {% endif %}
+
+    <div class="grid-noticias">
+        {% for noticia in noticias %}
+            <article class="card">
+                <span class="badge">{{ noticia.categoria }}</span>
+                <h2><a href="{{ url_for('articulo', id=noticia.id) }}">{{ noticia.titulo }}</a></h2>
+                <p class="subtitulo">{{ noticia.subtitulo }}</p>
+                <div class="card-meta">
+                    <small>📅 {{ noticia.fecha }}</small>
+                    <span>👍 {{ noticia.likes }} | 👎 {{ noticia.dislikes }}</span>
+                </div>
+            </article>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

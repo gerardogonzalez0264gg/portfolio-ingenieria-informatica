@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ noticia.titulo }}{% endblock %}
+
+{% block content %}
+<article class="articulo-completo">
+    <span class="badge">{{ noticia.categoria }}</span>
+    <h1>{{ noticia.titulo }}</h1>
+    <p class="lead">{{ noticia.subtitulo }}</p>
+    <small class="fecha">Publicado el {{ noticia.fecha }}</small>
+    
+    <hr>
+    
+    <div class="cuerpo-noticia">
+        {{ noticia.contenido }}
+    </div>
+
+    <!-- Reacciones -->
+    <div class="reacciones">
+        <button id="btn-like">👍 Like (<span id="count-likes">{{ noticia.likes }}</span>)</button>
+        <button id="btn-dislike">👎 Dislike (<span id="count-dislikes">{{ noticia.dislikes }}</span>)</button>
+    </div>
+
+    <hr>
+
+    <!-- Comentarios -->
+    <section class="comentarios">
+        <h3>Comentarios ({{ noticia.comentarios|length }})</h3>
+
+        <form action="{{ url_for('comentar', id=noticia.id) }}" method="POST" class="form-comentario">
+            <input type="text" name="autor" placeholder="Tu nombre (opcional)">
+            <textarea name="contenido" rows="3" placeholder="Escribe tu opinión..." required></textarea>
+            <button type="submit">Publicar comentario</button>
+        </form>
+
+        <div class="lista-comentarios">
+            {% for c in noticia.comentarios %}
+                <div class="comentario-box">
+                    <strong>{{ c.autor }}</strong> <small>{{ c.fecha }}</small>
+                    <p>{{ c.contenido }}</p>
+                </div>
+            {% else %}
+                <p>Sé el primero en opinar sobre esta noticia.</p>
+            {% endfor %}
+        </div>
+    </section>
+</article>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    function enviarReaccion(tipo) {
+        fetch('/noticia/{{ noticia.id }}/reaccion', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ tipo: tipo })
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.likes !== undefined) {
+                document.getElementById('count-likes').innerText = data.likes;
+                document.getElementById('count-dislikes').innerText = data.dislikes;
+            }
+        })
+        .catch(err => console.error('Error enviando reacción:', err));
+    }
+
+    document.getElementById('btn-like').addEventListener('click', function() {
+        enviarReaccion('like');
+    });
+
+    document.getElementById('btn-dislike').addEventListener('click', function() {
+        enviarReaccion('dislike');
+    });
+</script>
+{% endblock %}
