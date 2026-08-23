@@ -1,0 +1,92 @@
+/* Centrado del contenedor principal en la pantalla */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Evita que se pegue al techo si crece la tabla */
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5; /* Fondo claro externo para que resalte el azul */
+    font-family: sans-serif;
+}
+
+/* Caja azul del inventario */
+.contenedor-inv {
+    background-color: rgb(34, 65, 127);
+    color: aliceblue;
+    width: 850px;
+    margin: 40px auto; /* Margen externo para separarlo de los bordes de la pantalla */
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 22px;
+    border-bottom: 1px solid rgba(240, 248, 255, 0.2);
+    padding-bottom: 5px;
+}
+
+/* 
+  CAMBIO: Contenedor flex para poner etiquetas, inputs y el botón 
+  completamente en una sola línea horizontal.
+*/
+.campos-grupo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.campos-grupo label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.campos-grupo input {
+    width: 130px;
+    padding: 6px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+}
+
+/* Botón estilo negro sin bordes grises molestos */
+.campos-grupo button {
+    background-color: black;
+    color: aliceblue;
+    padding: 8px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para la tabla de productos */
+.tabla-inventario {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.tabla-inventario th, .tabla-inventario td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(240, 248, 255, 0.15);
+}
+
+.tabla-inventario th {
+    color: #aadbff; /* Color celeste para los encabezados */
+}
+.tabla-inventario td {
+    color: #aadbff; /* Color celeste para los encabezados */
+}
