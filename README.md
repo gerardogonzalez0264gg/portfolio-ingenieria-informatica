@@ -1,63 +1,107 @@
 # 🛡️ Portafolio de Ingeniería en Informática
-Este repositorio reúne una colección de proyectos académicos y prácticos desarrollados durante la carrera de Ingeniería en Informática. Incluye trabajos enfocados en **ciberseguridad, redes, análisis de datos y desarrollo web**.
 
----
+Bienvenido a mi portafolio de **Ingeniería en Informática**. En este repositorio recopilo proyectos, trabajos académicos y actividades prácticas desarrolladas durante mi formación, con el objetivo de documentar mi aprendizaje y mostrar las habilidades que he ido adquiriendo en distintas áreas de la informática.
 
-## 📌 Objetivo
-Consolidar y documentar proyectos orientados a la gestión de la seguridad informática, análisis predictivo de datos y diseño de soluciones tecnológicas, aplicando estándares metodológicos, mejores prácticas de ingeniería y frameworks de desarrollo para demostrar competencias técnicas adquiridas.
+## 📌 Sobre el repositorio
 
----
+El repositorio reúne proyectos relacionados con:
 
-## 🧰 Tecnologías y Herramientas
+* 🛡️ **Ciberseguridad**
+* 🌐 **Redes**
+* 💻 **Desarrollo de software y desarrollo web**
+* 📊 **Análisis y minería de datos**
+* 🗄️ **Bases de datos**
+* 🐍 **Programación**
+* 🔐 **Práctica de seguridad informática mediante TryHackMe**
 
-### 🛡️ Ciberseguridad & Redes
-* Cisco Packet Tracer
-* Protocolos de Red & Redes Locales
+## 📁 Contenido
 
-### 📊 Análisis de Datos & IA
-* Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
-* Google Colab
-* Jupyter Notebooks
-* Looker Studio (Visualización BI)
+### 🛡️ Proyectos de Ciberseguridad
 
-### 💻 Desarrollo Web & Bases de Datos
-* WordPress & Elementor
-* XAMPP / Servidores Locales
-* SQL / MySQL (Modelamiento de campos y bases de datos)
+En esta sección se encuentran proyectos y actividades relacionadas con el aprendizaje práctico de la ciberseguridad, incluyendo análisis de vulnerabilidades, seguridad web, reconocimiento, redes y diferentes técnicas utilizadas en pruebas de seguridad.
 
-### 🔄 Metodologías & Control de Versiones
-* Git & GitHub
-* Frameworks Ágiles (Scrum, Nexus)
-* Modelos de Madurez (CMM)
+También se incluye un registro de máquinas y salas completadas en **TryHackMe**, con información sobre las herramientas utilizadas y el nivel de dificultad de cada desafío.
 
----
+### 💻 Desarrollo de Software
 
-## 📁 Proyectos Incluidos
+Esta sección contiene diferentes proyectos desarrollados utilizando tecnologías como **Python, Flask, HTML, CSS y JavaScript**.
 
-### 🛡️ Ciberseguridad & Redes
+Entre ellos se encuentran:
 
+* 🔐 **Máquinas completadas:** aplicación web que utiliza HTML, CSS, JavaScript y JSON para mostrar las máquinas y salas de TryHackMe que he completado.
+* 🌐 **Portafolio Web:** página web personal desarrollada para presentar información, proyectos y trabajos realizados.
+* 🧮 **Calculadora:** aplicación web desarrollada con Python y Flask para realizar operaciones matemáticas básicas.
+* 🧮 **Calculadora 2.0:** calculadora desarrollada utilizando HTML, CSS y JavaScript.
+
+### 🌐 Redes
+
+Proyectos relacionados con configuración, administración y simulación de redes, utilizando herramientas como **Cisco Packet Tracer**, además de conceptos de redes locales, VLAN, direccionamiento IP y diferentes servicios de red.
 
 ### 📊 Análisis y Minería de Datos
-* **Pipeline de Limpieza Spotify 2023:** Tratamiento de datos incompletos mediante imputación estadística, detección de *outliers* (IQR) y codificación de variables (*One-Hot* y *Label Encoding*).
-* **Análisis y Visualización de Sismicidad en Chile:** Dashboard interactivo en Looker Studio con geolocalización de eventos y clasificación de severidad/profundidad.
-* **Modelo Predictivo OLS (League of Legends):** Regresión lineal simple por Mínimos Cuadrados Ordinarios para análisis de variables y ajuste estadístico ($R^2$, $RMSE$, $MAE$).
 
----
+Proyectos orientados al tratamiento, análisis y visualización de datos utilizando herramientas como **Python, Pandas, NumPy, Matplotlib, Scikit-learn, Jupyter Notebook y Google Colab**.
 
-## 🚀 Propósito
-Este repositorio demuestra la aplicación práctica de conceptos de ingeniería en entornos reales y simulados, sirviendo como portafolio técnico para áreas de **Ciberseguridad, Administración de Redes y Ciencia de Datos**.
+Entre los trabajos realizados se encuentran análisis de datos, limpieza de información, visualización y modelos predictivos.
 
----
+## 🧰 Tecnologías y herramientas
+
+### 💻 Programación y Desarrollo
+
+* Python
+* JavaScript
+* HTML
+* CSS
+* Flask
+* SQL / MySQL
+
+### 🛡️ Ciberseguridad
+
+* TryHackMe
+* Nmap
+* Gobuster
+* Burp Suite
+* Netcat
+* Herramientas de reconocimiento y análisis de vulnerabilidades
+
+### 🌐 Redes
+
+* Cisco Packet Tracer
+* Protocolos de red
+* Redes LAN
+* VLAN
+* Servicios de red
+
+### 📊 Datos
+
+* Pandas
+* NumPy
+* Matplotlib
+* Scikit-learn
+* Jupyter Notebook
+* Google Colab
+* Looker Studio
+
+### 🔄 Herramientas de desarrollo
+
+* Git
+* GitHub
+* XAMPP
+* Servidores locales
+
+## 🎯 Objetivo
+
+El objetivo de este repositorio es **documentar mi progreso como estudiante de Ingeniería en Informática**, mostrando proyectos académicos y personales que reflejan los conocimientos que he adquirido en programación, desarrollo web, redes, bases de datos, análisis de datos y ciberseguridad.
+
+Este portafolio se encuentra en constante actualización a medida que continúo desarrollando nuevos proyectos y adquiriendo conocimientos.
+
+## 🚀 En constante aprendizaje
+
+Actualmente continúo fortaleciendo mis conocimientos mediante el desarrollo de proyectos, la resolución de desafíos de ciberseguridad y la práctica de diferentes tecnologías relacionadas con la informática.
 
 ## 📬 Contacto
 
 * 👤 **Nombre:** Gerardo Alonso González González
 * 🎓 **Carrera:** Ingeniería en Informática — Universidad Bernardo O’Higgins (UBO)
 * ✉️ **Correo:** [gerardo.gonzalez0264@gmail.com](mailto:gerardo.gonzalez0264@gmail.com)
-* 💼 **LinkedIn:** [Gerardo González González](www.linkedin.com/in/gerardo-gonzález-gonzález-287392360)
-* 📍 **Ubicación:** Santiago, Chile
-
-
-
-
-
+* 💼 **LinkedIn:** Gerardo González González
+* 📍 **Chile**
