@@ -1,0 +1,223 @@
+:root {
+    --primary-color: #1a252f;
+    --accent-color: #c0392b;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #2c3e50;
+    --text-muted: #7f8c8d;
+    --border-color: #e2e8f0;
+    --font-heading: 'Georgia', serif;
+    --font-body: system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.navbar nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-redactar {
+    background: var(--accent-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Layout Principal */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex: 1;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+/* Tarjetas Feed */
+.grid-noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h2 a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.badge {
+    background: #e2e8f0;
+    color: #555;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    align-self: flex-start;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.card-meta {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Vista de Artículo Completo */
+.articulo-completo {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.lead {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.fecha {
+    color: var(--text-muted);
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.cuerpo-noticia {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin: 1.5rem 0;
+    white-space: pre-line;
+}
+
+/* Reacciones */
+.reacciones {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.reacciones button {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.reacciones button:hover {
+    background: #e2e8f0;
+}
+
+/* Formularios */
+.form-comentario, .form-noticia {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 1rem 0;
+}
+
+.form-comentario input, .form-comentario textarea, 
+.form-noticia input, .form-noticia select, .form-noticia textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+button[type="submit"] {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.comentario-box {
+    background: var(--bg-color);
+    padding: 0.8rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    border-left: 3px solid var(--primary-color);
+}
+
+.form-section {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: #95a5a6;
+    font-size: 0.85rem;
+    margin-top: auto;
+}
