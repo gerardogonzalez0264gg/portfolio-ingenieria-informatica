@@ -35,4 +35,4 @@ En desarrollo.
 
 ## Repositorio
 
-[Ver repositorio de AulaViva](https://github.com/gerardogonzalez0264gg/AulaViva)
+[Ver repositorio de AulaViva](https://github.com/gerardogonzalez0264gg/Aula_Viva.git)
