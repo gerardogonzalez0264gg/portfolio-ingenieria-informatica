@@ -1,129 +1,118 @@
 # 🛡️ Portafolio de Ingeniería en Informática
 
-Bienvenido a mi portafolio de Ingeniería en Informática.
+Bienvenido a mi portafolio de Ingeniería en Informática. En este repositorio recopilo proyectos, trabajos académicos y actividades prácticas desarrolladas durante mi formación, con el objetivo de documentar mi aprendizaje y mostrar las habilidades que he ido adquiriendo en distintas áreas de la informática.
 
-En este repositorio documento proyectos académicos, proyectos personales y prácticas realizadas durante mi formación universitaria, con un enfoque especial en **desarrollo de software, ciberseguridad, redes, análisis de datos y DevSecOps**.
+## 🎯 Objetivo
 
-El objetivo es mostrar de forma organizada mi aprendizaje, las tecnologías que he utilizado y los proyectos que he desarrollado.
+El objetivo de este repositorio es documentar mi progreso como estudiante de Ingeniería en Informática, mostrando proyectos académicos y personales que reflejan los conocimientos adquiridos en programación, desarrollo web, redes, bases de datos, análisis de datos, desarrollo de software y ciberseguridad.
 
----
+Este portafolio se encuentra en constante actualización a medida que continúo desarrollando nuevos proyectos y adquiriendo conocimientos.
 
-## 👨‍💻 Sobre mí
+## ⭐ Proyectos Destacados
 
-Soy **Gerardo Alonso González González**, estudiante de **Ingeniería en Informática** en la Universidad Bernardo O’Higgins.
+### 🖥️ Máquinas Completadas 2.0
 
-Actualmente estoy fortaleciendo mis conocimientos en:
+Aplicación web desarrollada para registrar y documentar máquinas virtuales de ciberseguridad resueltas durante el aprendizaje práctico.
 
-* 💻 Desarrollo de software
-* 🛡️ Ciberseguridad
-* 🌐 Redes y administración de sistemas
-* ☁️ Cloud y tecnologías AWS
-* 🔄 DevOps y DevSecOps
-* 📊 Análisis y minería de datos
-* 🐍 Programación
+La versión 2.0 incorpora mejoras respecto a la versión original, incluyendo:
 
-Este portafolio se encuentra en constante actualización a medida que desarrollo nuevos proyectos y adquiero nuevas habilidades.
+* 🔎 Búsqueda parcial y sin distinguir mayúsculas/minúsculas.
+* ⌨️ Búsqueda mediante la tecla `Enter`.
+* 📋 Opción para mostrar nuevamente todas las máquinas.
+* 📖 Walkthroughs para documentar las resoluciones.
+* 🪟 Ventana modal para visualizar los walkthroughs sin salir de la página.
+* 📝 Soporte para Markdown mediante `Marked.js`.
+* 🧩 Código JavaScript más modular.
+* 🎨 Mejoras en la interfaz y experiencia de usuario.
+* ➕ Incorporación de nuevas máquinas.
 
----
+**Tecnologías:** HTML, CSS, JavaScript, JSON y Markdown.
 
-# ⭐ Proyectos destacados
-
-A continuación se presentan algunos de los proyectos que mejor representan las habilidades que estoy desarrollando.
-
-## 🔐 1. Máquinas Resueltas — Ciberseguridad
-
-Proyecto utilizado para documentar y organizar máquinas y salas de **TryHackMe** completadas durante mi aprendizaje práctico de ciberseguridad.
-
-### Tecnologías y herramientas
-
-* Linux
-* Nmap
-* Gobuster
-* Burp Suite
-* Netcat
-* Enumeración y reconocimiento
-* Seguridad web
-* Escalación de privilegios
-* TryHackMe
-
-### Objetivo
-
-Registrar de forma organizada los desafíos de ciberseguridad realizados, las herramientas utilizadas y los conocimientos adquiridos durante cada laboratorio.
-
-📁 **Ubicación:** `Proyectos_de_ciberseguridad` / `Desarrollo_de_Software`
+📁 [Ver proyecto](./Desarrollo_de_Software/maquinas_virtuales/Maquinas_Completadas_2.0)
 
 ---
 
-## 👥 2. App RRHH + API REST
+### 👥 App RRHH + API REST
 
-Aplicación orientada a la gestión de recursos humanos, acompañada de una **API REST** para administrar información de empleados.
+Aplicación orientada a la gestión de recursos humanos, desarrollada como proyecto de software e integración de una API REST.
 
-El proyecto permite trabajar con una arquitectura basada en frontend y backend, además de la gestión de datos mediante una API.
+El proyecto permite trabajar con conceptos relacionados con:
 
-### Tecnologías
+* Desarrollo de aplicaciones.
+* APIs REST.
+* Gestión de empleados.
+* Arquitectura cliente-servidor.
+* Persistencia de datos.
+* Desarrollo backend.
 
-* Java
-* Spring Boot
-* Spring Data JPA
-* REST API
-* SQL
-* HTML
-* CSS
-* JavaScript
-* Git y GitHub
+**Tecnologías:** Java, Spring Boot, JPA y API REST.
 
-### Objetivo
-
-Aplicar conceptos de desarrollo de software, creación de APIs REST, persistencia de datos y comunicación entre aplicaciones.
-
-📁 **Ubicación:** `Desarrollo_de_Software/App_RRHH_+_API_REST`
+📁 [Ver proyecto](./Desarrollo_de_Software/App_RRHH_%2B_API_REST)
 
 ---
 
-## 🏦 3. SecureBank API — DevSecOps
+### 🔐 SecureBank API
 
-Proyecto académico enfocado en la aplicación de prácticas de **DevSecOps** dentro del ciclo de desarrollo de software.
+Proyecto académico enfocado en prácticas de **DevSecOps y CI/CD**, utilizando GitHub Actions para automatizar procesos de construcción y pruebas.
 
-El proyecto incorpora un flujo de integración continua mediante **GitHub Actions**, automatizando procesos de construcción y pruebas del proyecto.
+El proyecto incluye:
 
-### Tecnologías y herramientas
+* ⚙️ Integración continua.
+* 🧪 Ejecución automatizada de pruebas.
+* 🔨 Proceso de build.
+* 📦 Generación de artefactos.
+* 🌿 Trabajo con ramas y Pull Requests.
+* 🔄 Automatización mediante GitHub Actions.
 
-* Node.js
-* npm
-* Git
-* GitHub
-* GitHub Actions
-* CI/CD
-* DevSecOps
-* Automated Testing
+**Tecnologías:** Node.js, npm, GitHub Actions y Git.
 
-### Objetivo
+📁 [Ver proyecto](./Desarrollo_de_Software/securebank-api)
 
-Comprender cómo integrar automatización, pruebas y buenas prácticas de seguridad dentro del ciclo de desarrollo de software.
+## 📌 Sobre el repositorio
 
-📁 **Repositorio:** `securebank-api`
+El repositorio reúne proyectos relacionados con:
 
----
+* 🛡️ Ciberseguridad.
+* 🌐 Redes.
+* 💻 Desarrollo de software y desarrollo web.
+* 📊 Análisis y minería de datos.
+* 🐍 Programación.
+* 🔐 Práctica de seguridad informática mediante TryHackMe.
 
-# 📁 Contenido del portafolio
+## 📁 Contenido
 
-## 🛡️ Ciberseguridad
+### 🛡️ Proyectos de Ciberseguridad
 
-Proyectos y actividades prácticas relacionadas con:
+En esta sección se encuentran proyectos y actividades relacionadas con el aprendizaje práctico de la ciberseguridad, incluyendo análisis de vulnerabilidades, seguridad web, reconocimiento, redes y diferentes técnicas utilizadas en pruebas de seguridad.
 
-* Seguridad web
-* Reconocimiento y enumeración
-* Análisis de vulnerabilidades
-* Linux
-* Redes
-* TryHackMe
-* Pentesting
+También se incluye un registro de máquinas y salas completadas en TryHackMe, con información sobre las herramientas utilizadas y el nivel de dificultad de cada desafío.
 
----
+### 💻 Desarrollo de Software
 
-## 💻 Desarrollo de Software
+Esta sección contiene diferentes proyectos desarrollados utilizando tecnologías como Python, Flask, HTML, CSS, JavaScript, Java y Spring Boot.
 
-Proyectos desarrollados utilizando diferentes tecnologías y lenguajes:
+Entre ellos se encuentran:
+
+* 🖥️ Máquinas Completadas 2.0.
+* 👥 App RRHH + API REST.
+* 🔐 SecureBank API.
+* 🌐 Portafolio Web.
+* 🧮 Calculadora.
+* 🧮 Calculadora 2.0.
+
+### 🌐 Redes
+
+Proyectos relacionados con configuración, administración y simulación de redes, utilizando herramientas como Cisco Packet Tracer, además de conceptos de redes locales, VLAN, direccionamiento IP y diferentes servicios de red.
+
+### 📊 Análisis y Minería de Datos
+
+Proyectos orientados al tratamiento, análisis y visualización de datos utilizando herramientas como Python, Pandas, NumPy, Matplotlib, Scikit-learn, Jupyter Notebook y Google Colab.
+
+Entre los trabajos realizados se encuentran análisis de datos, limpieza de información, visualización y modelos predictivos.
+
+## 🧰 Tecnologías y herramientas
+
+### 💻 Programación y Desarrollo
 
 * Python
 * Java
@@ -132,30 +121,29 @@ Proyectos desarrollados utilizando diferentes tecnologías y lenguajes:
 * CSS
 * Flask
 * Spring Boot
-* REST API
-* SQL
+* JPA
+* SQL / MySQL
 
----
+### 🛡️ Ciberseguridad
 
-## 🌐 Redes
+* TryHackMe
+* Nmap
+* Gobuster
+* Burp Suite
+* Netcat
+* Herramientas de reconocimiento y análisis de vulnerabilidades
 
-Trabajos relacionados con:
+### 🌐 Redes
 
 * Cisco Packet Tracer
+* Protocolos de red
 * Redes LAN
 * VLAN
-* Direccionamiento IP
-* Protocolos de red
-* Configuración de dispositivos
 * Servicios de red
+* SSH
 
----
+### 📊 Datos
 
-## 📊 Análisis y Minería de Datos
-
-Proyectos relacionados con el procesamiento, análisis y visualización de datos utilizando:
-
-* Python
 * Pandas
 * NumPy
 * Matplotlib
@@ -164,75 +152,22 @@ Proyectos relacionados con el procesamiento, análisis y visualización de datos
 * Google Colab
 * Looker Studio
 
----
+### 🔄 Herramientas de desarrollo
 
-# 🧰 Tecnologías y herramientas
+* Git
+* GitHub
+* GitHub Actions
+* XAMPP
+* Servidores locales
 
-### 💻 Desarrollo
+## 🚀 En constante aprendizaje
 
-`Python` · `Java` · `JavaScript` · `HTML` · `CSS` · `Flask` · `Spring Boot` · `REST API`
+Actualmente continúo fortaleciendo mis conocimientos mediante el desarrollo de proyectos, la resolución de desafíos de ciberseguridad y la práctica de diferentes tecnologías relacionadas con la informática.
 
-### 🛡️ Ciberseguridad
+## 📬 Contacto
 
-`Linux` · `TryHackMe` · `Nmap` · `Gobuster` · `Burp Suite` · `Netcat`
-
-### 🌐 Redes
-
-`Cisco Packet Tracer` · `TCP/IP` · `LAN` · `VLAN`
-
-### 📊 Datos
-
-`Pandas` · `NumPy` · `Matplotlib` · `Scikit-learn` · `Jupyter` · `Google Colab`
-
-### 🔄 DevOps / DevSecOps
-
-`Git` · `GitHub` · `GitHub Actions` · `CI/CD` · `npm`
-
-### ☁️ Cloud
-
-`AWS` · `Cloud Computing`
-
----
-
-# 🎓 Formación
-
-**Ingeniería en Informática**
-Universidad Bernardo O’Higgins (UBO)
-
-Actualmente continúo desarrollando conocimientos mediante proyectos académicos, laboratorios prácticos y estudio independiente.
-
----
-
-# 🚀 Actualmente aprendiendo
-
-Estoy fortaleciendo mis conocimientos principalmente en:
-
-* 🛡️ Ciberseguridad y Pentesting
-* 🔐 Seguridad de aplicaciones
-* ☁️ Cloud Computing y AWS
-* 🔄 DevSecOps y CI/CD
-* 💻 Desarrollo Backend
-* 🌐 Redes
-* 🐧 Linux
-
----
-
-# 📈 Objetivo profesional
-
-Mi objetivo es continuar desarrollándome en el área de **Tecnologías de la Información**, especialmente en áreas relacionadas con **ciberseguridad, cloud, desarrollo de software y DevSecOps**.
-
-Este repositorio representa mi progreso y sirve como evidencia práctica de los conocimientos y proyectos desarrollados durante mi formación.
-
----
-
-# 📬 Contacto
-
-* 👤 **Gerardo Alonso González González**
-* 🎓 **Ingeniería en Informática — Universidad Bernardo O’Higgins**
-* 🇨🇱 **Chile**
-* 💼 **LinkedIn:** Gerardo González González
-* 📧 **Email:** [gerardo.gonzalez0264@gmail.com](mailto:gerardo.gonzalez0264@gmail.com)
-
----
-
-⭐ Este portafolio se encuentra en constante actualización con nuevos proyectos, laboratorios y aprendizajes.
+* 👤 Nombre: Gerardo Alonso González González
+* 🎓 Carrera: Ingeniería en Informática — Universidad Bernardo O’Higgins (UBO)
+* ✉️ Correo: [gerardo.gonzalez0264@gmail.com](mailto:gerardo.gonzalez0264@gmail.com)
+* 💼 LinkedIn: Gerardo González González
+* 📍 Chile
