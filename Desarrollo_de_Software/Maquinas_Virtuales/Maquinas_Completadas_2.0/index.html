@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio - Maquinas TryHackMe</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Libreria para renderizar Markdown (usada para mostrar los walkthroughs) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+    </head>
+    <body>
+        <div class="tit"><h1>Maquinas</h1></div>
+        <div class="ingreso">
+            <input type="text" id="nombre" placeholder="Nombre de la maquina...">
+            <button onclick="buscar()">Buscar</button>
+            <button onclick="mostrarTodas()">Ver todas</button>
+        </div>
+        <div class="cuadros" id="resultado"></div>
+
+        <div id="modalOverlay" class="modal-overlay">
+            <div class="modal">
+                <button class="modal-cerrar" onclick="cerrarWalkthrough()">&times;</button>
+                <h2 id="modalTitulo"></h2>
+                <div id="modalContenido" class="modal-contenido"></div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

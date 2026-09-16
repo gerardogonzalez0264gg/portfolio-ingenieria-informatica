@@ -1,0 +1,266 @@
+[
+  {
+    "Nombre": "RootMe",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Gobuster",
+      "Netcat"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "Agent Sudo",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Burp Suite",
+      "Hydra",
+      "John the Ripper",
+      "Binwalk",
+      "Steghide"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "Pickle Rick",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Gobuster",
+      "Nikto",
+      "Browser Developer Tools"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "DNS in detail",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "dig",
+      "nslookup"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "0x41haz",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "file",
+      "strings",
+      "checksec",
+      "Ghidra",
+      "xxd"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "Corridor",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Burp Suite",
+      "curl"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "Agent T",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Burp Suite",
+      "curl"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "Offensive Security intro",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Gobuster",
+      "Burp Suite"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "Dig Dug",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "dig",
+      "nslookup"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "Lo-Fi",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Gobuster",
+      "curl"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "CyberHeroes",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Gobuster",
+      "Burp Suite"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "MD2PDF",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Burp Suite",
+      "Feroxbuster",
+      "curl"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "TakeOver",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Gobuster",
+      "ffuf",
+      "dig",
+      "curl"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "Compiled",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "file",
+      "strings",
+      "Ghidra"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "W1seGuy",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Python",
+      "Netcat",
+      "XOR"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "Fools Mate",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Burp Suite",
+      "curl"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "Dreaming",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Gobuster",
+      "Burp Suite",
+      "MySQL",
+      "Python"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "The Phishing Pond",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Navegador web"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "Missing Person",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Google",
+      "Google Images",
+      "ExifTool",
+      "Google Maps",
+      "Redes sociales"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "Room 404",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Gobuster",
+      "wget",
+      "Git"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "Publisher",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Gobuster",
+      "Searchsploit",
+      "curl"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "Pyrat",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "Netcat",
+      "Python",
+      "ffuf"
+    ],
+    "Walkthrough": ""
+  },
+  {
+    "Nombre": "Lookup",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Nmap",
+      "ffuf",
+      "Hydra",
+      "Metasploit"
+    ],
+    "Walkthrough": ""
+  }
+]

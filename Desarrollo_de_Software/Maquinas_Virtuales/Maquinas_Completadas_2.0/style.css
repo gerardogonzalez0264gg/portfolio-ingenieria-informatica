@@ -1,0 +1,180 @@
+body{
+    background-color: rgb(15, 23, 42);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tit{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.ingreso{
+    text-align: center;
+}
+.ingreso input{
+    height: 30px;
+    border-radius: 15px;
+    padding: 0 10px;
+    border: none;
+}
+.ingreso button{
+    height: 34px;
+    padding: 0 14px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(26, 86, 216);
+    color: white;
+    cursor: pointer;
+    margin-left: 6px;
+}
+.ingreso button:hover{
+    background-color: rgb(37, 99, 235);
+}
+
+.cuadro{
+    background-color: rgb(30, 41, 59);
+    color:white;
+    width: 400px;
+    min-height: 250px;
+    border-radius: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cuadros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.herramientas-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 20px;
+}
+.tag-herramienta{
+    background-color: rgb(26, 86, 216);
+    border-radius: 10px;
+    padding: 4px 8px;
+    font-size: 13px;
+}
+.Dificultad{
+    background-color:rgb(53, 149, 52);
+    display: inline-block;
+    border-radius: 15px;
+    padding: 4px 10px;
+}
+.nom{
+    text-align: center;
+}
+.caracter{
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.error{
+    color:red;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Boton de walkthrough */
+.walkthrough-container{
+    margin: auto 20px 5px 20px;
+    text-align: center;
+}
+.btn-walkthrough{
+    background-color: rgb(147, 51, 234);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+}
+.btn-walkthrough:hover{
+    background-color: rgb(168, 85, 247);
+}
+.btn-walkthrough-disabled{
+    background-color: rgb(71, 85, 105);
+    cursor: not-allowed;
+}
+
+/* Modal del walkthrough */
+.modal-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 100;
+    justify-content: center;
+    align-items: flex-start;
+}
+.modal-overlay.activo{
+    display: flex;
+}
+.modal{
+    background-color: rgb(30, 41, 59);
+    color: white;
+    max-width: 800px;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px 35px;
+    border-radius: 15px;
+    position: relative;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+.modal-cerrar{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+}
+.modal-cerrar:hover{
+    color: rgb(248, 113, 113);
+}
+.modal-contenido{
+    line-height: 1.6;
+}
+.modal-contenido h1,
+.modal-contenido h2,
+.modal-contenido h3{
+    color: rgb(147, 197, 253);
+}
+.modal-contenido code{
+    background-color: rgb(15, 23, 42);
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-family: "Courier New", monospace;
+}
+.modal-contenido pre{
+    background-color: rgb(15, 23, 42);
+    padding: 12px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+.modal-contenido pre code{
+    background: none;
+    padding: 0;
+}
+.modal-contenido img{
+    max-width: 100%;
+    border-radius: 8px;
+}
+.modal-contenido a{
+    color: rgb(147, 197, 253);
+}
