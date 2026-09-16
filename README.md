@@ -66,7 +66,7 @@ El proyecto incluye:
 
 **Tecnologías:** Node.js, npm, GitHub Actions y Git.
 
-📁 [Ver proyecto](./Desarrollo_de_Software/securebank-api)
+📁 [Ver proyecto](https://github.com/gerardogonzalez0264gg/portfolio-ingenieria-informatica/tree/main/Proyectos_De_Estudio/SecureBank_API)
 
 ## 📌 Sobre el repositorio
 
