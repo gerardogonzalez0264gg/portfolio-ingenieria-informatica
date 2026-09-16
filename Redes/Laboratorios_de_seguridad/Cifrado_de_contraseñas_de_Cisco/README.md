@@ -1,6 +1,6 @@
 # Cifrado de contraseñas de Cisco
 
-En este laboratorio lo que haces es encriptar la contraseña cisco dentro del roter con el formato de hash MD5.
+En este laboratorio lo que haces es encriptar la contraseña cisco dentro del router con el formato de hash MD5.
 
 enable secret cisco -> estableces la contraseña cisco dentro del router 
 
