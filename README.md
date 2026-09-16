@@ -47,7 +47,7 @@ El proyecto permite trabajar con conceptos relacionados con:
 
 **Tecnologías:** Java, Spring Boot, JPA y API REST.
 
-📁 [Ver proyecto](./Desarrollo_de_Software/App_RRHH_%2B_API_REST)
+📁 [Ver proyecto](https://github.com/gerardogonzalez0264gg/portfolio-ingenieria-informatica/tree/main/Desarrollo_de_Software/App_RRHH_%2B_API_REST)
 
 ---
 
