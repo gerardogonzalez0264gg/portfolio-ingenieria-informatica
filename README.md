@@ -28,7 +28,7 @@ La versión 2.0 incorpora mejoras respecto a la versión original, incluyendo:
 
 **Tecnologías:** HTML, CSS, JavaScript, JSON y Markdown.
 
-📁 [Ver proyecto](./Desarrollo_de_Software/maquinas_virtuales/Maquinas_Completadas_2.0)
+📁 [Ver proyecto](https://github.com/gerardogonzalez0264gg/portfolio-ingenieria-informatica/tree/main/Desarrollo_de_Software/Maquinas_Virtuales/Maquinas_Completadas_2.0)
 
 ---
 
