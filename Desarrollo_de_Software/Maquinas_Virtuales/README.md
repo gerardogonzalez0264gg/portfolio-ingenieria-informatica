@@ -20,11 +20,11 @@ De esta forma, el proyecto funciona como un **registro personal de aprendizaje y
 
 ## 📂 Versiones
 
-### 📌 Máquinas Completadas — Versión 1.0
+### 📌 Maquinas_Completadas — Versión 1.0
 
 Primera versión del proyecto.
 
-Su objetivo principal es mostrar un catálogo de las máquinas virtuales completadas, junto con información básica sobre cada una.
+Su objetivo principal es mostrar un catálogo de las máquinas virtuales completadas junto con información básica sobre cada una.
 
 Incluye:
 
@@ -35,7 +35,7 @@ Incluye:
 * Búsqueda de máquinas.
 * Tarjetas para visualizar la información.
 
-### 🚀 Máquinas Completadas 2.0 — Versión 2.0
+### 🚀 Maquinas_Completadas_2.0 — Versión 2.0
 
 Versión mejorada del proyecto, incorporando nuevas funcionalidades y una estructura de código más organizada.
 
@@ -54,12 +54,12 @@ Incluye:
 ## 📊 Evolución del proyecto
 
 ```text
-Máquinas Completadas 1.0
-        │
-        │ Mejoras en funcionalidad,
-        │ documentación y organización
-        ▼
-Máquinas Completadas 2.0
+Maquinas_Completadas — v1.0
+          │
+          │ Mejoras en funcionalidad,
+          │ documentación y organización
+          ▼
+Maquinas_Completadas_2.0 — v2.0
 ```
 
 La versión 2.0 mantiene la base de la primera versión, pero amplía sus funcionalidades para convertir el proyecto en una herramienta más completa para **documentar y consultar el aprendizaje obtenido durante la resolución de máquinas de ciberseguridad**.
@@ -80,14 +80,5 @@ maquinas_virtuales/
 │
 ├── README.md
 │
-├── Maquinas_Completadas/
-│   └── Primera versión del proyecto
-│
-└── Maquinas_Completadas_2.0/
-    └── Versión mejorada del proyecto
+├──
 ```
-
-## 📚 Propósito del proyecto
-
-Este proyecto forma parte de mi **portafolio de aprendizaje en Ingeniería Informática**, y busca demostrar el progreso en el desarrollo web y, especialmente, la aplicación práctica de conocimientos relacionados con **ciberseguridad, enumeración, explotación y escalada de privilegios**.
-
