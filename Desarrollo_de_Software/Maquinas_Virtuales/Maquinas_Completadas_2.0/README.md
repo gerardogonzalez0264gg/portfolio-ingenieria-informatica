@@ -1,6 +1,6 @@
-# 🖥️ Máquinas Virtuales 2.0
+# 🖥️ Máquinas Completadas 2.0
 
-Versión mejorada del proyecto **Máquinas Completadas**, creado para registrar y documentar máquinas virtuales resueltas durante el aprendizaje de ciberseguridad.
+Versión mejorada del proyecto **Maquinas_Completadas**, creado para registrar y documentar máquinas virtuales resueltas durante el aprendizaje de ciberseguridad.
 
 ## 🎯 Objetivo
 
@@ -59,17 +59,16 @@ La versión 2.0 incorpora nuevas máquinas al proyecto, aumentando el contenido 
 
 ## 📌 Comparación con la versión 1.0
 
-| Característica        | Máquinas Completadas 1.0   |  Máquinas 2.0     |
-| --------------------- | ------------------------   |  ---------------- |
-| Catálogo de máquinas  | ✅                        | ✅                | 
-| Búsqueda              | Básica                     | Mejorada          |
-| Búsqueda parcial      | ❌                        | ✅                |
-| Mayúsculas/minúsculas | Coincidencia exacta        | No importa        |
-| Mostrar todas         | ❌                        | ✅                |
-| Búsqueda con Enter    | ❌                        | ✅                |
-| Walkthroughs          | ❌                        | ✅                |
-| Ventana modal         | ❌                        | ✅                |
-| Markdown              | ❌                        | ✅                |
-| Código modular        | Básico                    | Mejor organizado |
-| Máquinas registradas  | 20                       | 23               |
-
+| Característica        | Maquinas_Completadas 1.0 | Maquinas_Completadas_2.0 |
+| --------------------- | ------------------------ | ------------------------ |
+| Catálogo de máquinas  | ✅                        | ✅                        |
+| Búsqueda              | Básica                   | Mejorada                 |
+| Búsqueda parcial      | ❌                        | ✅                        |
+| Mayúsculas/minúsculas | Coincidencia exacta      | No importa               |
+| Mostrar todas         | ❌                        | ✅                        |
+| Búsqueda con Enter    | ❌                        | ✅                        |
+| Walkthroughs          | ❌                        | ✅                        |
+| Ventana modal         | ❌                        | ✅                        |
+| Markdown              | ❌                        | ✅                        |
+| Código modular        | Básico                   | Mejor organizado         |
+| Máquinas registradas  | 20                       | 23                       |
