@@ -35,7 +35,7 @@ Incluye:
 * Búsqueda de máquinas.
 * Tarjetas para visualizar la información.
 
-### 🚀 Máquinas 2.0 — Versión 2.0
+### 🚀 Máquinas Completadas 2.0 — Versión 2.0
 
 Versión mejorada del proyecto, incorporando nuevas funcionalidades y una estructura de código más organizada.
 
@@ -59,7 +59,7 @@ Máquinas Completadas 1.0
         │ Mejoras en funcionalidad,
         │ documentación y organización
         ▼
-Máquinas 2.0
+Máquinas Completadas 2.0
 ```
 
 La versión 2.0 mantiene la base de la primera versión, pero amplía sus funcionalidades para convertir el proyecto en una herramienta más completa para **documentar y consultar el aprendizaje obtenido durante la resolución de máquinas de ciberseguridad**.
@@ -83,7 +83,7 @@ maquinas_virtuales/
 ├── Maquinas_Completadas/
 │   └── Primera versión del proyecto
 │
-└── Maquinas_2.0/
+└── Maquinas_Completadas_2.0/
     └── Versión mejorada del proyecto
 ```
 
