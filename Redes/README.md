@@ -41,4 +41,3 @@ Durante el aprendizaje se utilizan diferentes herramientas para practicar y anal
 Esta sección forma parte de mi **portafolio de aprendizaje en Ingeniería Informática** y busca demostrar el desarrollo progresivo de conocimientos en **redes, administración de sistemas y ciberseguridad**.
 
 El conocimiento de redes constituye una base importante para comprender posteriormente áreas como **seguridad informática, análisis de tráfico, pentesting y seguridad de infraestructura**.
-
