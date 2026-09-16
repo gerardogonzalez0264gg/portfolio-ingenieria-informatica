@@ -36,24 +36,6 @@ Durante el aprendizaje se utilizan diferentes herramientas para practicar y anal
 * Herramientas de línea de comandos de Linux.
 * Otras herramientas relacionadas con el análisis y administración de redes.
 
-## 📂 Organización
-
-Los contenidos de esta sección se organizan según las diferentes actividades, cursos, prácticas y proyectos relacionados con redes.
-
-```text
-Redes/
-│
-├── README.md
-│
-├── Cursos/
-│
-├── Practicas/
-│
-└── Proyectos/
-```
-
-> La estructura puede variar a medida que se incorporen nuevos contenidos y proyectos.
-
 ## 🎓 Propósito dentro del portafolio
 
 Esta sección forma parte de mi **portafolio de aprendizaje en Ingeniería Informática** y busca demostrar el desarrollo progresivo de conocimientos en **redes, administración de sistemas y ciberseguridad**.
