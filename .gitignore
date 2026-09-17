@@ -1,0 +1,8 @@
+# Java / Maven
+**/target/
+
+# IntelliJ IDEA
+**/.idea/
+
+# Archivos comprimidos
+**/*.zip
