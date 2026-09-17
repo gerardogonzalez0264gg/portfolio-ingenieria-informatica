@@ -37,7 +37,7 @@ Documentar y organizar las máquinas y salas de **TryHackMe** que he completado,
 
 ### 📌 Descripción
 
-Este proyecto corresponde a una evolución de la versión original del proyecto **Máquinas Resueltas**, incorporando mejoras en la organización y presentación de las máquinas completadas.
+Este proyecto corresponde a una evolución de la versión original del proyecto **Máquinas Completadas**, incorporando mejoras en la organización y presentación de las máquinas completadas.
 
 El proyecto forma parte de mi aprendizaje práctico en ciberseguridad mediante laboratorios y máquinas virtuales.
 
