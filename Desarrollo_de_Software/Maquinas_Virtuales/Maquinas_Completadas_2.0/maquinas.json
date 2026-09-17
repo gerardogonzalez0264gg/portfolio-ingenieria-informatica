@@ -22,7 +22,7 @@
       "Binwalk",
       "Steghide"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Walkthrough\n\n**Enumeración**\n1. **Nmap:** escaneo de puertos, se encuentran 3 puertos abiertos.\n2. **Página web:** una pista dentro del texto del puerto 80.\n3. **Nombre del agente:** se descubre probando letras del abecedario con `curl -A \"C\" -L <IP>`, lo que devuelve un mensaje con el nombre.\n\n**Hash cracking y fuerza bruta**\n\n4. **Hydra:** ataque de fuerza bruta con `hydra -l \"chris\" -P <diccionario> <clave.hash>`.\n5. Se descomprime el zip con `7z x 8702.zip`.\n6. Se usa **John the Ripper** para encontrar la contraseña de Area51 dentro del texto extraído del zip.\n7. El otro agente se descubre haciendo `cat` a los archivos encontrados en el camino.\n8. Dentro de un archivo se encuentra el nombre y usuario que sirve para acceder por SSH; conectándose como `james` se obtiene la flag de usuario.\n9. Para el \"incidente\" hubo que usar Python para encontrar un directorio dentro de la página; una imagen había que buscarla en Google, lo que reveló el nombre \"Roswell\".\n10. La vulnerabilidad **CVE-2019-14287** (bypass de restricción de `sudo -u`) afecta a la versión de sudo del usuario `james` — se ejecuta algo como `sudo -u#-1 /bin/bash`, lo que da acceso a root.\n11. La root flag se encuentra en `/root`, junto con el nombre del agente."
   },
   {
     "Nombre": "Pickle Rick",
@@ -44,7 +44,7 @@
       "dig",
       "nslookup"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Notas / Walkthrough\n\n**DNS (Domain Name System):** sirve para poder comunicarse dentro de la red; básicamente traduce una dirección IP a un dominio más fácil de recordar.\n\n**Estructura de un dominio**\n\n| Componente | Significado | Ejemplo |\n|---|---|---|\n| **TLD** (Top-Level Domain) | Extensión final del enlace; indica el propósito o país de origen | `.com`, `.org`, `.cl`, `.edu` |\n| **Dominio** (Second-Level Domain) | Nombre único que se elige o registra | `google`, `ubo`, `wikipedia` |\n| **Subdominio** | Ramificación antes del dominio principal | `drive` (drive.google.com) |\n\n**Tipos de registros DNS más comunes**\n\n| Registro | Nombre | Para qué sirve | Ejemplo |\n|---|---|---|---|\n| **A** | Address | Apunta a una IPv4 | `192.168.1.10` |\n| **AAAA** | Quad-A | Apunta a una IPv6 | `2606:4700:3030::ac43:dde6` |\n| **CNAME** | Canonical Name | Alias hacia otro dominio | `www.tupagina.com` |\n| **MX** | Mail Exchanger | Servidores de correo del dominio | `10 mail.server.com` |\n| **TXT** | Text | Texto plano (verificación, SPF, DKIM) | `\"v=spf1 include:_spf.google.com ~all\"` |\n\n**ISP:** Proveedor de Servicios de Internet, la empresa que da acceso a Internet.\n\n**¿Qué pasa al hacer una solicitud DNS?**\n- **Compu:** pide la IP de la página al DNS Recursivo.\n- **Recursive DNS:** no sabe la IP, así que pregunta a los demás servidores.\n- **Root DNS Server:** lee el final del dominio (`.com`, `.cl`) y lo manda al servidor TLD correcto.\n- **TLD DNS Server:** lee el nombre de la web (`google`, `ubo`) y lo manda al servidor Autoritativo del dueño.\n- **Authoritative DNS Server:** busca el registro A, encuentra la IP exacta y se la devuelve al Recursivo para que el equipo pueda conectarse.\n\n**dig:** herramienta usada para hacer reconocimiento y auditoría de servidores DNS."
   },
   {
     "Nombre": "0x41haz",
@@ -57,7 +57,7 @@
       "Ghidra",
       "xxd"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Walkthrough personal (dificultad percibida: máxima)\n\nEra un archivo que contenía un ejecutable corrupto en el bloque 02. Pasos:\n\n- **El problema inicial (header corrupto):** el ejecutable estaba manipulado a propósito para que Linux no supiera cómo ejecutarlo (`unknown arch`). Se corrigió editando sus bytes con `hexeditor`.\n- **Lógica interna del programa:** al desensamblarlo con Radare2 (`r2`), la función `main` hace dos cosas:\n  - Guarda la clave en memoria: construye la contraseña en 3 partes (`2@@25$gf` + `sT&@` + `L`).\n  - Valida la respuesta: pide el texto del usuario, cuenta los caracteres (`strlen`) y verifica que mida 13 caracteres (`0xd` en hexadecimal).\n- **Solución:** uniendo los fragmentos cargados en memoria se obtiene la clave real de 13 caracteres: `2@@25$gfsT&@L`."
   },
   {
     "Nombre": "Corridor",
@@ -67,7 +67,7 @@
       "Burp Suite",
       "curl"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Objetivo\nExplotar la vulnerabilidad **IDOR** (Insecure Direct Object Reference), alterando el contenido de la URL para acceder a información no autorizada de otros usuarios.\n\n**Paso a paso**\n1. Escaneo de puertos → solo el puerto 80 está abierto.\n2. Revisión de la página → tiene múltiples \"puertas\"; al ingresar, el contenido de la URL cambia como si fueran hashes. Al tener 32 bytes se asume que es **MD5**, así que se decodifican los hashes; cada puerta corresponde a un número del 1 al 13.\n\n**Casos de borde:** en IDOR los casos de borde son el `0` y el `-1`. Al hashear el número `0` se obtiene el hash que muestra la flag.\n\n**Resumen:** esta máquina enseña sobre vulnerabilidades IDOR, y fue necesario usar codificación MD5 para obtener la flag a partir de un caso de borde."
   },
   {
     "Nombre": "Agent T",
@@ -78,7 +78,7 @@
       "Burp Suite",
       "curl"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Walkthrough personal (dificultad: 8/10)\n\n- `--excluded--`: útil cuando el servidor responde 200 OK para todo (páginas que no existen igual devuelven 200).\n- `searchsploit`: para buscar vulnerabilidades conocidas.\n\n**Pasos**\n1. Ping para verificar conectividad.\n2. Escaneo con Nmap: puerto 80 abierto.\n3. Revisión de la página y del Wappalyzer: hecha con PHP 8.1.0.\n4. Búsqueda con `searchsploit php 8.1.0` y descarga del exploit: `searchsploit -m php/webapps/49933.py`.\n5. Se apunta el exploit a la URL de la página y se ejecuta `cat /flag.txt` para obtener la flag."
   },
   {
     "Nombre": "Offensive Security intro",
@@ -98,7 +98,7 @@
       "dig",
       "nslookup"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Walkthrough personal (dificultad: 6-7/10)\n\nEl problema: hay un servidor web en una IP, pero no deja hacer consultas a través de la IP, solo a través del nombre de dominio.\n\n**Identificación del problema:** el servidor restringe el acceso directo por IP y solo responde a peticiones dirigidas por nombre de dominio (restricción por *Virtual Host*).\n\n**Fases del proceso**\n1. **Escaneo de puertos:** reconocimiento sobre el dominio, revela los puertos 80 (HTTP) y 443 (HTTPS) abiertos.\n2. **Resolución e interrogación DNS:** se ejecuta `nslookup [dominio] [IP_del_server]`, forzando al DNS del laboratorio a resolver el dominio, lo que devuelve el registro con la flag oculta."
   },
   {
     "Nombre": "Lo-Fi",
@@ -109,7 +109,7 @@
       "Gobuster",
       "curl"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Informe: TryHackMe - Lo-Fi\n\n**LFI (Local File Inclusion):** vulnerabilidad que permite acceder a archivos del servidor que, en condiciones normales, no deberíamos poder leer.\n\n#### Problema\nSe presenta una página de música que reproduce contenido basado en videos de YouTube. Al presionar una canción es posible interceptar y modificar la petición con Burp Suite. Aprovechando esto se aplica una técnica clásica de LFI: el uso de `../` (path traversal).\n\n#### Pasos realizados\n\n**1. Nmap — Escaneo de puertos**\nPuertos abiertos:\n- **80** (HTTP)\n- **22** (SSH)\n\n**2. Burp Suite — Modificación de la petición**\nSe intercepta la petición y se cambia el parámetro de:\n```\n?page=relax.php\n```\na:\n```\n?page=../../../../../etc/passwd\n```\nEsto permitió ver los usuarios del sistema y sus datos asociados (home, shell, etc.).\n\n> **Nota:** al principio se probó con `../../../etc/passwd`, pero la aplicación tenía una protección que detectaba el intento (\"sucio hacker\"). Para evadirla se agregaron más niveles `../` — mientras más `../` se agregan, más te acercas (o llegas) a la raíz del sistema.\n\n**3. Obtención de la flag**\n```\n?page=../../../../../flag.txt\n```\nEsto entregó la flag, ya que es común en TryHackMe que la flag se guarde en la raíz del sistema de archivos.\n\n#### Vulnerabilidad\nLa página presentó una vulnerabilidad de **Local File Inclusion (LFI)**, que permitió leer archivos del sistema (`/etc/passwd`) y obtener la flag en la raíz, explotada modificando peticiones con Burp Suite."
   },
   {
     "Nombre": "CyberHeroes",
@@ -120,7 +120,7 @@
       "Gobuster",
       "Burp Suite"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Walkthrough personal (dificultad: Fácil)\n\nMáquina enfocada en explotar vulnerabilidades del lado del cliente (*Client-Side Validation*).\n\n**Metodología**\n1. **Ping:** se verifica la conexión con paquetes ICMP.\n2. **Nmap:** puerto 80/TCP (HTTP) abierto.\n3. **Inspección web:** se ubica la sección de login.\n4. **Análisis del código fuente (`Ctrl+U`):** se encuentra un script JS que valida las credenciales directamente en el navegador. Al revertir la cadena codificada se obtiene el usuario y contraseña en texto plano:\n   - **Usuario:** `h3ck3rBoi`\n   - **Contraseña:** `SuperSecret@12345`\n5. **Explotación:** se ingresan las credenciales en el formulario y se obtiene la flag.\n\n**Mitigación**\n- Nunca hacer la autenticación ni guardar credenciales en JS del cliente.\n- Las contraseñas no deben estar hardcodeadas: deben guardarse hasheadas (bcrypt/Argon2) con salt en una base de datos segura.\n\n**Glosario**\n- **Bootstrap:** framework de desarrollo web (CSS/JS) para interfaces responsivas."
   },
   {
     "Nombre": "MD2PDF",
@@ -132,7 +132,7 @@
       "Feroxbuster",
       "curl"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Resumen Ejecutivo: SSRF en Renderizado PDF (dificultad personal: difícil)\n\n**Conceptos clave**\n- **Markdown:** lenguaje de marcado ligero para dar formato a texto plano con símbolos especiales.\n- **SSRF (Server-Side Request Forgery):** hacer peticiones no autorizadas desde el servidor.\n- **Render:** tomar datos o código y procesarlos para convertirlos en algo visible (en este caso, un PDF).\n\nAl ingresar código en Markdown, este pasa primero por HTML y luego se convierte a PDF. Eso permite inyectar etiquetas HTML maliciosas para obtener la flag: la vulnerabilidad real está del lado del servidor, que no sanitiza ni revisa el contenido antes de renderizarlo.\n\n- **Vulnerabilidad:** SSRF vía inyección HTML.\n- **Causa:** el backend convierte Markdown → HTML → PDF sin sanitizar etiquetas (`<iframe>`, `<img>`, etc.).\n- **Impacto:** el motor de PDF ejecuta las peticiones desde el propio servidor, permitiendo acceder a servicios locales restringidos (p. ej. `localhost:5000/admin`) y extraer su contenido dentro del PDF.\n- **Solución:** sanitizar la entrada del usuario, deshabilitar la carga de recursos externos/locales en el motor de PDF y aislar la aplicación en la red."
   },
   {
     "Nombre": "TakeOver",
@@ -145,7 +145,7 @@
       "dig",
       "curl"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Walkthrough personal (dificultad: Media — evaluación propia: 7.5/10)\n\n**SSL:** candado digital que cifra la comunicación entre el navegador y la web para que nadie espíe los datos.\n\nEl punto de partida es un dominio que no resuelve en el navegador, así que se agrega a `/etc/hosts`.\n\n**Pasos**\n1. **Nmap:** puertos 22, 80 y 443 abiertos.\n2. **Enumeración de subdominios con ffuf:** se descubren subdominios (en este caso, `support`).\n3. Se agrega `support.futurevera.thm` a `/etc/hosts` con la IP de la máquina víctima.\n4. Dentro del subdominio hay otra página con un certificado SSL que permite ver información del DNS (el valor del certificado revela los nombres de los servidores que protege).\n5. Esa información del DNS también se agrega a `/etc/hosts` con la misma IP.\n6. Al entrar aparece \"página no encontrada\", pero la flag queda visible en la propia URL (hubo que entrar por HTTP porque la página ya no existía).\n\n**Reflexión:** máquina bastante desafiante, sobre todo por encontrar el uso correcto de ffuf — hubo que usar el wordlist `common.txt` dentro de `/usr/share/wordlists/seclists/Discovery/Web-Content/` para obtener los subdominios, que luego se fueron probando en `/etc/hosts` hasta llegar a la info del DNS vía el certificado."
   },
   {
     "Nombre": "Compiled",
@@ -156,7 +156,7 @@
       "strings",
       "Ghidra"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Walkthrough personal (dificultad: 5/10)\n\nSe inició el análisis del archivo con `file <nombre_archivo>`, confirmando que es un binario ELF de 64 bits. Al hacer `cat` sobre el archivo se veían símbolos no imprimibles junto a algunas cadenas legibles (*strings*), lo que indicó la necesidad de usar un descompilador como **Ghidra** para hacer ingeniería inversa sobre el flujo del programa.\n\n**Pasos del análisis**\n1. **Entorno en Ghidra:** se creó un proyecto nuevo, se importó el binario y se ejecutó el análisis automático sobre la función `main`.\n2. **Entrada de datos (`scanf`):** en el código descompilado se encontró `__isoc99_scanf(\"DoYouEven%sCTF\", local_28)`. Esto revela que el programa espera una cadena que **empiece con `DoYouEven`** y **termine con `CTF`**, intercalando el valor `%s`.\n3. **Validación de la clave:** se observó una comparación `strcmp(local_28, \"_init\")`. Si es verdadera (`== 0`), el programa imprime `\"Correct!\"`.\n4. **Obtención de la flag:** concatenando el formato del `scanf` con la cadena validada por `strcmp`, la flag correcta es: `DoYouEven_initCTF`.\n\n**Propuesta de mejora**\n- **Hasheo y salting:** en vez de comparar cadenas en texto plano con `strcmp`, la contraseña debería procesarse con un algoritmo como SHA-256 + salt.\n- **Ofuscación de cadenas:** ocultar o cifrar las cadenas sensibles dentro del binario para evitar que un simple análisis de *strings* las revele.\n\n**Glosario**\n- **Ghidra:** herramienta de ingeniería inversa (NSA) que descompila código máquina a un lenguaje de alto nivel legible.\n- **Texto plano:** datos representados solo por caracteres codificados (ASCII/UTF-8), sin metadatos de formato visual."
   },
   {
     "Nombre": "W1seGuy",
@@ -178,7 +178,7 @@
       "Burp Suite",
       "curl"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Informe: TryHackMe - Fool's Mate\n\n*(Nota de contexto tomada de la misma sesión de estudio: la página del reto está construida con **Node.js** — el entorno que ejecuta JavaScript en el servidor — y **Express** — el framework que facilita crear las rutas y la API. También se repasó el handshake TCP: **SYN** el cliente pide iniciar la conexión, **SYN-ACK** el servidor acepta y sincroniza, **ACK** el cliente confirma y se abre el canal.)*\n\n#### Problema\nAl intentar hacer jaque mate con la torre, el sistema muestra un mensaje de error y no permite ganar la partida. La misión consiste en **interceptar y modificar la estructura del request** (cambiando el destino del movimiento de `a7` a `a8`) para poder ganar y obtener la flag.\n\n#### Pasos realizados\n\n**1. Reconocimiento (Nmap)**\nDos puertos abiertos:\n- **22** (SSH)\n- **80** (HTTP)\n\n**2. Interceptación con Burp Suite**\n- Se inicia Burp Suite y se abre el navegador integrado con el proxy configurado.\n- Se activa **Intercept ON** en la pestaña Proxy.\n- Se realiza un movimiento en el tablero (torre de `a1` a `a7`), lo que da jaque pero no jaque mate según la lógica del cliente.\n- Al enviarse la solicitud (`POST /api/move`), Burp intercepta el request antes de que llegue al servidor:\n```json\n{\n  \"from\": \"a1\",\n  \"to\": \"a7\"\n}\n```\n\n**3. Modificación del request**\n- Se edita el campo `\"to\"` cambiando `\"a7\"` por `\"a8\"` directamente en Burp Suite.\n- Se hace clic en **Forward** para reenviar la solicitud modificada.\n\n**4. Resultado**\nEl servidor no valida el jaque mate del lado del backend: simplemente procesa el movimiento recibido y confirma la victoria:\n```json\n{\n  \"ok\": true,\n  \"move\": \"a1a8\",\n  \"fen\": \"R5k1/5ppp/8/8/8/8/5PPP/6K1 b - - 1 1\",\n  \"status\": \"checkmate\",\n  \"turn\": \"b\",\n  \"winner\": \"white\",\n  \"flag\": \"THM{...}\"\n}\n```\n\n#### Vulnerabilidad\nLa aplicación confía completamente en los datos enviados por el cliente sin validar la legalidad del movimiento ni el estado del juego en el servidor. Esto permite manipular directamente las peticiones HTTP para forzar un resultado (\"checkmate\") sin jugar una partida válida — una **falta de validación del lado del servidor (server-side validation)**."
   },
   {
     "Nombre": "Dreaming",
@@ -191,7 +191,7 @@
       "MySQL",
       "Python"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Walkthrough (Easy, Linux — 3 flags)\n\n**Pasos**\n1. **Ping:** conectividad exitosa.\n2. **Nmap:** puertos 80 y 20 abiertos → hay página web.\n3. **Página:** se muestra la página por defecto de Apache.\n4. **Directorios:** se escanean los directorios. Se descubre el directorio `/app`, que muestra un archivo `pluck 4.7.13` (un CMS ligero, tipo WordPress, vulnerable a RCE por archivos PHP).\n5. **Vulnerabilidad (searchsploit, `49909.py`):** existe una vulnerabilidad al subir un archivo `.phar`, que entrega una consola.\n6. **Descubrimiento adicional:** dentro de `/opt` hay software de terceros desactualizado que corre con permisos SUID 777 (root). Dentro de `test.py` se encuentra la contraseña del usuario `lucien`, lo que permite entrar por SSH y obtener la flag de usuario.\n\n**Escalando a `death`**\n- Se revisa `.bash_history` para ver el historial y encontrar una conexión a una base de datos.\n- Al ejecutar la vulnerabilidad `.phar` también se ve `getDreams.py`, que tiene un usuario `death` y una base de datos (`library`).\n- **Base de datos:** se observa un apartado de \"soñadores y sus sueños\"; al poder escribir ahí, es posible hacer una inyección SQL para ejecutar código.\n- Con la inyección se ejecuta `&& cat /home/death/getDreams.py` para ver el usuario y contraseña del siguiente salto.\n\n**Escalando a `morpheus`**\n- Como usuario `death`, en `/home` aparece el usuario `morpheus`, pero no se puede leer su flag por permisos.\n- Se aprovecha el módulo `shutil` (gestor de archivos) para ver qué se copió de un lado a otro.\n- En `restore.py` se ve que se hizo una copia con `shutil`; con `find / -name shutil* 2>/dev/null` se localiza la primera librería usada y se modifica para inyectar una reverse shell.\n- Al ejecutarse como `morpheus`, se obtiene acceso y la flag final. La reverse shell se generó con un generador de reverse shells online."
   },
   {
     "Nombre": "The Phishing Pond",
@@ -200,7 +200,7 @@
     "Herramientas": [
       "Navegador web"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Reporte de Resolución: Máquina de Phishing\n\n#### 1. Descripción general\nPlataforma interactiva orientada a la concienciación y aprendizaje en ciberseguridad, enfocada en identificar correos de *phishing* frente a correos legítimos.\n\n#### 2. Mecánica del desafío\n- **Estructura:** evaluación dinámica de **10 escenarios/preguntas**.\n- **Identificación y justificación:** hay que decidir si el correo es phishing o legítimo; si se marca como phishing, se debe elegir la razón correcta entre 3 opciones.\n- **Sistema de vidas:** 3 intentos de error como máximo; al superarlo hay que reiniciar el desafío.\n- **Condición de victoria:** responder correctamente todos los ejercicios manteniendo al menos una vida entrega la flag final.\n\n#### 3. Conclusión\nMáquina didáctica, fluida y entretenida. Refuerza habilidades de análisis de ingeniería social y prevención de incidentes de phishing en el día a día."
   },
   {
     "Nombre": "Missing Person",
@@ -213,7 +213,7 @@
       "Google Maps",
       "Redes sociales"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Walkthrough (Easy — OSINT)\n\nMáquina de OSINT: a partir de dos imágenes hay que encontrar la ubicación de un amigo que se perdió en una cueva con su DJ.\n\n**Pasos**\n1. **Investigación:** búsqueda en Google de lugares cercanos, hasta dar con el nombre de las direcciones.\n2. **Validación:** con la información de los primeros pasos se obtienen pistas para las siguientes respuestas.\n3. **Herramientas:** Google Maps, Instagram y Facebook para reconstruir el camino del amigo perdido.\n\nEs una máquina puramente de investigación (como indica \"OSINT\"); no requiere muchos comandos más allá de `exiftool`, que entrega metadatos de las imágenes."
   },
   {
     "Nombre": "Room 404",
@@ -225,7 +225,7 @@
       "wget",
       "Git"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Walkthrough — enumeración de directorios y archivos Git\n\n**Pasos**\n1. **Ping:** conectividad exitosa.\n2. **Nmap:** puertos 22 y 8080 abiertos.\n3. **Vista:** al entrar solo con la IP da error, pero agregando el puerto `:8080` se puede ver el contenido de la página.\n4. **Enumeración de directorios:** se encuentra `/.git/HEAD`. Al descargarlo, `HEAD` resulta ser un puntero que indica en qué lugar del repo estás — `refs/heads/main` (`refs` guarda los punteros, `heads` indica un lugar local, `main` la rama actual).\n5. **Revisión:** dado que `HEAD` solo da una ruta, se instala una herramienta para trabajar con repos Git expuestos.\n6. **Descarga de la herramienta `git-dumper`:**\n```\npip3 install git-dumper --break-system-packages --ignore-installed\n```\n   **Por qué:** `pip3` bloqueaba la instalación por las políticas de protección de paquetes de Debian/Parrot OS. `--break-system-packages` evita esa restricción y `--ignore-installed` evita errores por librerías preinstaladas que no se podían sobrescribir.\n7. Se crea una carpeta para volcar toda la estructura del repo:\n```\ngit-dumper http://<ip>:8080/.git/ mi_repo\n```\n8. **Flag:** dentro del repo descargado hay un `README.md` que contiene la flag."
   },
   {
     "Nombre": "Publisher",
@@ -237,7 +237,7 @@
       "Searchsploit",
       "curl"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Walkthrough — Publisher\n\nMáquina de hosting con un ambiente simulado en la que hay que: enumerar, identificar versiones, descubrir la vulnerabilidad, escalar y ejecutar un RCE, y escalar privilegios (no mediante un binario personalizado, sino a través de una shell) para obtener las flags.\n\n**Pasos**\n1. **Nmap (`-sCV`):** se identifican los servicios expuestos y aparece de forma recurrente el término **SPIP** — se investiga y resulta ser una herramienta para crear y gestionar sitios web (un CMS).\n2. **Gobuster:** descubrimiento de directorios, que entrega una nueva ruta.\n3. Se evalúa el repositorio de **Chocapikk** (usado para explotar SPIP hasta la versión 4.2.x), pero se descarta porque su desarrollo resulta muy confuso: descarga de librerías, falta de dependencias y múltiples errores.\n4. **Exploit RCE (2023, autenticación):** se usa este exploit con modificaciones:\n   - **URL base:** se añade `.rstrip('/')` para evitar errores de ruta al conectar con `/spip`.\n   - **`php_code`:** pasa de texto plano (`<?php system(...) ?>`) a una **cadena serializada** en PHP (`s:%d:\"<?php system('%s'); ?>\";`) para que el sistema vulnerable la acepte y ejecute el comando (`cmd`).\n   - Se ajusta la ruta para que apunte a `/spip`, encapsulando el payload para que SPIP lo interprete correctamente.\n5. Se codifica la reverse shell en **base64** y se pega dentro del script (para que no se rompa al llegar y se entienda como una sola operación al ejecutarse).\n6. Al lanzar el exploit se obtiene una reverse shell como `www-data`, con la flag de usuario.\n7. Se accede al usuario `think`, obteniendo su flag y también su `id_rsa`, que permite conectarse por SSH copiando la clave a la terminal atacante.\n8. Ya como `think`, se listan binarios SUID con:\n```\nfind / -perm -4000 -type f 2>/dev/null\n```\n   Aparece `run_container` (en `sbin`), con permisos `777` — analizable con `strings`.\n9. El problema: dentro de la shell (`ash`) hay restricciones para lanzar scripts maliciosos.\n10. Usando `/lib64/ld-linux-x86-64.so.2 /bin/bash` se logra lanzar una shell; se modifica el script para usar `bash -p` y así conservar los privilegios al ejecutar el binario.\n11. Ejecutando el comando del contenedor con la opción 1 (aunque en un intento no dio la shell esperada), finalmente se logra escalar a `root` y obtener la flag.\n\n**Resumen:** la reverse shell se codificó en base64 para que llegara intacta al servidor y produjera una bash funcional. La escalada final se logró explotando un binario SUID (`run_container`) mal configurado."
   },
   {
     "Nombre": "Pyrat",
@@ -249,7 +249,7 @@
       "Python",
       "ffuf"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Walkthrough — Pyrat\n\nTras conectarse a la VPN, se hace ping a la máquina víctima para confirmar conectividad.\n\n**Pasos**\n1. **Nmap:** escaneo solo con el parámetro de la IP (con otros parámetros el escaneo se quedaba pegado en el 50%).\n2. **Investigación:** el puerto 8000 corresponde a un servidor de desarrollo en Python. Se corre Gobuster apuntando específicamente a ese puerto: `http://<ip>:<puerto>`.\n3. **Gobuster:** todos los directorios devuelven 200 OK (comportamiento típico de un servidor con *wildcard*/comodín) → se agrega `--exclude-length 27` (el tamaño de esa respuesta comodín).\n4. **Errores:** tras varios intentos con Gobuster y ffuf sin encontrar nada, se cambia la URL de HTTPS a HTTP, lo que devuelve un mensaje.\n5. **Mensaje:** sugiere conectarse por un método más simple → se usa `nc` contra la IP y el puerto, obteniendo un **intérprete interactivo de Python (REPL)**.\n6. **Resultado:** con `print(globals())` se listan las funciones/objetos disponibles: aparecen `os`, `get_admin`, `shell`, entre otros.\n7. **Exploración:** el objeto `os` permite interactuar con el sistema operativo (listar archivos, ver usuarios), pero requiere envolver los comandos en `print(...)` — algo incómodo, así que se pasa directo a `shell`.\n8. **`get_admin`:** se usa `print(get_admin.__code__.co_consts)` para ver el código y las constantes de la función (`code` muestra el código, `co_consts` las constantes/variables fijas), revelando el usuario y la contraseña de admin.\n9. **Acceso admin:** con esas credenciales se accede como usuario `admin`.\n10. **Navegación:** dentro de `/home/think` está la flag de usuario (`user.txt`); la de root está en `/root/root.txt`.\n11. **Revisión del código `pyrat.py`:** se aprecian problemas de sanitización de entrada de usuario (línea 58) y la contraseña de `admin` está *hardcodeada* (escrita en texto plano dentro del código)."
   },
   {
     "Nombre": "Lookup",
@@ -261,6 +261,16 @@
       "Hydra",
       "Metasploit"
     ],
-    "Walkthrough": ""
+    "Walkthrough": "### Walkthrough — Lookup (dos flags, enumeración de directorios)\n\nSe parte haciendo ping para verificar conectividad.\n\n**Pasos**\n1. **Nmap:** puertos 22 y 80 abiertos → hay página web.\n2. Al entrar a la web hay un login; se prueban credenciales básicas (`admin:admin`, `admin:password`), y el mensaje \"wrong password\" sugiere que el usuario `admin` sí existe.\n3. **Problema:** la contraseña de `admin` es muy compleja, así que la estrategia es buscar otro usuario válido con un script (apoyo de ChatGPT) que prueba una lista de nombres contra el login y distingue \"Wrong password\" (usuario válido) de \"wrong username\":\n\n```python\nimport requests\n\nurl = \"http://lookup.thm/login.php\"\nfile_path = \"/usr/share/seclists/Usernames/Names/names.txt\"\n\ntry:\n    with open(file_path, \"r\") as file:\n        for line in file:\n            username = line.strip()\n            if not username:\n                continue\n            data = {\"username\": username, \"password\": \"password\"}\n            response = requests.post(url, data=data)\n            if \"Wrong password\" in response.text:\n                print(f\"Username found: {username}\")\n            elif \"wrong username\" in response.text:\n                continue\nexcept FileNotFoundError:\n    print(f\"Error: The file {file_path} does not exist.\")\nexcept requests.RequestException as e:\n    print(f\"Error: An HTTP request error occurred: {e}\")\n```\n\n4. Se descubre el usuario `jose`.\n5. **Hydra:**\n```\nhydra -l jose -P /usr/share/wordlists/rockyou.txt lookup.thm http-post-form \"/login.php:username=^USER^&password=^PASS^:Wrong\" -V\n```\n- `http-post-form`: envío de la solicitud POST a `login.php`.\n- `username=^USER^&password=^PASS^`: valores que Hydra reemplaza en cada intento.\n- `:Wrong`: indica que el intento fue incorrecto (Hydra sigue probando); `-V` muestra el proceso.\n- Resultado → usuario: `jose`, password: `password123`.\n6. Con esas credenciales se ingresa y se ve el contenido de la página.\n7. Se buscan vulnerabilidades con `searchsploit`, lo que da una vulnerabilidad de **elFinder** explotable con Metasploit (`exploit/unix/webapp/elfinder_php_connector_exiftran_cmd_injection`), consiguiendo una terminal interactiva y un directorio de usuario `think`.\n8. Dentro de `/home/think` hay un archivo `.password`. Revisando el `PATH`, se nota que no existe el comando `id`, así que se crea uno falso en `/tmp/id` con permisos de `www-data`, y al ejecutarse entrega contraseñas.\n9. Con Hydra y esas contraseñas contra el usuario `think` se encuentra: `think : josemario.AKA(think)`.\n10. Por SSH se entra como `think` y se obtiene la primera flag.\n11. `sudo -l` muestra que `/usr/bin/look` puede ejecutarse con permisos de root (aplica a `ALL`).\n12. Se abusa de `look` (técnica documentada en GTFOBins) para leer la clave privada (`private key`) y con esa credencial se entra como `root`, obteniendo la última flag."
+  },
+  {
+    "Nombre": "Neighbour",
+    "Os": "Linux",
+    "Dificultad": "Fácil",
+    "Herramientas": [
+      "Navegador web",
+      "Burp Suite"
+    ],
+    "Walkthrough": "### Walkthrough — Neighbour (dificultad personal: baja)\n\n**IDOR (Insecure Direct Object Reference):** vulnerabilidad donde el servidor confía en los datos de la URL sin verificar permisos.\n\n**Pasos**\n1. Se ingresa a la página web.\n2. Al final de la página se indica que existen cuentas para invitados.\n3. Revisando el código fuente aparece un comentario con el usuario y la contraseña para ingresar.\n4. Al iniciar sesión como `guest`, la URL muestra `profile.php?user=guest`.\n5. **La vulnerabilidad:** cambiando el parámetro `user` de `guest` a `admin` directamente en la URL, se obtiene la flag — el servidor no valida si el usuario autenticado tiene permiso para ver ese perfil.\n\n**Solución:** mejorar la validación del lado del servidor para que no confíe ciegamente en las solicitudes, ya que incluso si se oculta el cambio en el cliente, un atacante con Burp Suite podría alterar igualmente los parámetros de la petición."
   }
 ]
