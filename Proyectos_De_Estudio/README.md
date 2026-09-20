@@ -1,17 +1,50 @@
-# 📚 Proyectos de Estudio
-
-En esta sección se encuentran diferentes proyectos desarrollados durante mi formación en Ingeniería Informática, con el objetivo de practicar y reforzar mis conocimientos de programación y desarrollo de software.
-
-Los proyectos abarcan diferentes áreas, desde programas desarrollados en Python hasta proyectos con ESP32, RFID y sistemas embebidos.
+# 🎓 Proyectos de Estudio
 
 ## 🎯 Objetivo
 
-El objetivo de esta sección es documentar mi aprendizaje mediante proyectos prácticos, aplicando conceptos de programación, lógica, manejo de datos, electrónica y desarrollo de soluciones.
+Documentar y organizar proyectos, actividades y trabajos desarrollados durante mi formación en Ingeniería Informática, con el propósito de aplicar los conocimientos adquiridos en distintas asignaturas.
 
-## 📁 Proyectos
+## 📌 Sobre esta sección
 
-- ESP32-RTOS-RFID
-- Adivina el número
-- Calculadora de estudio
-- Creador de contraseñas
-- Menú de estudiantes
+Este espacio reúne trabajos académicos y ejercicios prácticos que forman parte de mi proceso de aprendizaje.
+
+Cada proyecto permite reforzar conceptos teóricos, desarrollar habilidades técnicas y enfrentar problemas relacionados con distintas áreas de la informática.
+
+## 📚 Áreas de aprendizaje
+
+Los proyectos pueden estar relacionados con:
+
+* Ingeniería de Software.
+* Programación y estructuras de datos.
+* Bases de datos.
+* Arquitectura de software.
+* Sistemas informáticos.
+* Gestión y documentación de proyectos tecnológicos.
+
+## 🛠️ Herramientas y tecnologías
+
+Las herramientas utilizadas dependerán de los requerimientos de cada asignatura y proyecto. Entre ellas pueden encontrarse:
+
+* Java y Python.
+* JavaScript, HTML y CSS.
+* SQL.
+* Git y GitHub.
+* Herramientas de documentación y diagramación.
+
+## 📂 Organización de los proyectos
+
+Cada repositorio puede incluir:
+
+* Descripción del problema o requerimiento.
+* Objetivos del trabajo.
+* Desarrollo y documentación.
+* Tecnologías utilizadas.
+* Resultados obtenidos.
+
+## 🧠 Propósito académico
+
+Estos proyectos reflejan mi progreso como estudiante, permitiéndome consolidar conocimientos, mejorar mis habilidades de resolución de problemas y construir una base técnica para futuros desafíos profesionales.
+
+---
+
+📌 *Sección dedicada al aprendizaje, la práctica y el desarrollo académico continuo.*
