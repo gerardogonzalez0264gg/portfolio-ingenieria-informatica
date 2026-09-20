@@ -1,43 +1,52 @@
-# 🌐 Redes
-
-Sección dedicada al estudio y práctica de **redes informáticas**, incluyendo conceptos fundamentales de comunicación, protocolos, configuración de dispositivos y seguridad de redes.
+# 🌐 Redes Informáticas
 
 ## 🎯 Objetivo
 
-El objetivo de esta sección es **registrar y organizar los conocimientos adquiridos sobre redes informáticas**, combinando conceptos teóricos con ejercicios y prácticas para comprender cómo se comunican los dispositivos y cómo proteger las comunicaciones.
+Reunir proyectos, laboratorios y actividades prácticas relacionados con redes informáticas, permitiendo aplicar conocimientos de conectividad, configuración de dispositivos y comunicación entre sistemas.
 
-## 📚 Contenidos
+## 📌 Sobre esta sección
 
-En esta sección se trabajan diferentes conceptos relacionados con redes, entre ellos:
+En este espacio se documentan ejercicios académicos y prácticas orientadas al aprendizaje de redes, desde conceptos fundamentales hasta configuraciones y escenarios de conectividad.
 
-* Modelos de comunicación de redes.
-* Direccionamiento IPv4 e IPv6.
-* Subredes.
-* Protocolos de red.
-* TCP/IP.
-* DNS.
-* DHCP.
-* ARP.
-* HTTP y HTTPS.
-* Puertos y servicios.
-* Switching y routing.
-* Configuración de dispositivos de red.
-* Seguridad de redes.
-* Análisis y monitoreo del tráfico.
-* Herramientas utilizadas para la administración y análisis de redes.
+Los proyectos permiten comprender el funcionamiento de las redes y desarrollar habilidades para su configuración, análisis y resolución de problemas.
 
-## 🛠️ Herramientas
-
-Durante el aprendizaje se utilizan diferentes herramientas para practicar y analizar redes, como:
+## 🛠️ Tecnologías y herramientas
 
 * Cisco Packet Tracer.
+* Dispositivos y tecnologías Cisco.
+* TCP/IP.
+* IPv4 e IPv6.
+* Subnetting.
+* VLAN.
+* Routing y Switching.
 * Wireshark.
-* Nmap.
-* Herramientas de línea de comandos de Linux.
-* Otras herramientas relacionadas con el análisis y administración de redes.
 
-## 🎓 Propósito dentro del portafolio
+*Las tecnologías y herramientas dependerán de cada laboratorio.*
 
-Esta sección forma parte de mi **portafolio de aprendizaje en Ingeniería Informática** y busca demostrar el desarrollo progresivo de conocimientos en **redes, administración de sistemas y ciberseguridad**.
+## 📂 Proyectos y laboratorios
 
-El conocimiento de redes constituye una base importante para comprender posteriormente áreas como **seguridad informática, análisis de tráfico, pentesting y seguridad de infraestructura**.
+Esta sección puede incluir:
+
+* Diseño y simulación de topologías de red.
+* Configuración básica de routers y switches.
+* Direccionamiento IPv4 e IPv6.
+* Segmentación de redes mediante VLAN.
+* Configuración de rutas y conectividad.
+* Diagnóstico y resolución de problemas de red.
+
+## 🧠 Habilidades en desarrollo
+
+* Comprensión de modelos y protocolos de red.
+* Configuración básica de dispositivos de red.
+* Diseño y análisis de topologías.
+* Administración de direccionamiento IP.
+* Diagnóstico de problemas de conectividad.
+* Documentación de configuraciones y resultados.
+
+## 📈 Aprendizaje continuo
+
+Los proyectos de esta sección reflejan mi progreso en el área de redes informáticas y mi interés por fortalecer conocimientos relacionados con infraestructura, conectividad y administración de redes.
+
+---
+
+📌 *Sección académica en constante actualización.*
