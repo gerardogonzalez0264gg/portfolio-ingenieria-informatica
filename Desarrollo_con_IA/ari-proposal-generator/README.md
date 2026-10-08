@@ -25,3 +25,29 @@ ari-proposal-generator/
 ├── agents/
 │   └── openai.yaml
 └── references/
+
+Contexto
+
+Proyecto realizado como parte de la:
+
+ONE | Inmersión: Agentes de IA para Negocios
+
+Clase 2: Construyendo un agente para generar propuestas comerciales.
+
+Conversación utilizada
+
+Ver conversación en ChatGPT
+
+Autor
+
+Gerardo Alonso González González
+
+
+Luego pulsa **`Commit changes`**.
+
+### 4. Tu link para compartir
+
+Una vez publicado, tendrás un enlace parecido a:
+
+```text
+https://github.com/gerardogonzalez0264gg/ari-proposal-generator
