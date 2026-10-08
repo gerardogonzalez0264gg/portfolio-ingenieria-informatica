@@ -19,7 +19,7 @@ El agente utiliza instrucciones, contexto y reglas de negocio para recopilar inf
 
 ## Estructura
 
-```text
+text
 ari-proposal-generator/
 ├── SKILL.md
 ├── agents/
