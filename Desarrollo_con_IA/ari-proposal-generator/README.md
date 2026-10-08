@@ -1,53 +1,27 @@
 # ARI Proposal Generator
 
-Skill de Inteligencia Artificial desarrollada durante la **Inmersión ONE: Agentes de IA para Negocios** de Alura Latam.
+Skill de IA desarrollada durante la **Inmersión ONE: Agentes de IA para Negocios** de Alura Latam.
 
 ## Descripción
 
-Esta Skill permite configurar un agente de IA orientado a la generación de propuestas comerciales.
-
-El agente utiliza instrucciones, contexto y reglas de negocio para recopilar información y generar propuestas estructuradas.
+Skill para crear un agente capaz de recopilar información y generar propuestas comerciales utilizando contexto, documentos de referencia y reglas de negocio.
 
 ## Características
 
-- Generación de propuestas comerciales.
-- Flujo mediante briefing.
-- Recolección guiada de información.
-- Uso de documentos de referencia.
-- Aplicación de reglas de negocio.
-- Estructuración de propuestas.
+* Generación de propuestas comerciales.
+* Flujo mediante briefing.
+* Formulario guiado.
+* Uso de documentos de referencia.
+* Aplicación de reglas de negocio.
 
-## Estructura
+## Clase
 
-text
-ari-proposal-generator/
-├── SKILL.md
-├── agents/
-│   └── openai.yaml
-└── references/
+**Clase 2:** Construyendo un agente para generar propuestas comerciales.
 
-Contexto
+## 🔗 Conversación
 
-Proyecto realizado como parte de la:
+[Ver conversación con el agente en ChatGPT](https://chatgpt.com/s/cx_6ac6e6a55ee481919a0881d79a028085)
 
-ONE | Inmersión: Agentes de IA para Negocios
+## Autor
 
-Clase 2: Construyendo un agente para generar propuestas comerciales.
-
-Conversación utilizada
-
-Ver conversación en ChatGPT
-
-Autor
-
-Gerardo Alonso González González
-
-
-Luego pulsa **`Commit changes`**.
-
-### 4. Tu link para compartir
-
-Una vez publicado, tendrás un enlace parecido a:
-
-```text
-https://github.com/gerardogonzalez0264gg/ari-proposal-generator
+**Gerardo Alonso González González**
