@@ -1,6 +1,6 @@
 # Portafolio Web — Gerardo González
 
-Portafolio personal desarrollado con HTML y CSS para presentar mi perfil como estudiante de Ingeniería Informática, mis proyectos, habilidades, formación práctica y certificaciones.
+V_2.0 del Portafolio personal desarrollado con HTML y CSS para presentar mi perfil como estudiante de Ingeniería Informática, mis proyectos, habilidades, formación práctica y certificaciones.
 
 ## Contenido
 
