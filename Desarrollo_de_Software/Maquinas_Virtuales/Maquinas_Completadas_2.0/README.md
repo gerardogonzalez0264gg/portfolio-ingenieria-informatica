@@ -2,7 +2,7 @@
 
 Versión mejorada del proyecto **Maquinas_Completadas**, creado para registrar y documentar máquinas virtuales resueltas durante el aprendizaje de ciberseguridad.
 
-## 🎯 Objetivo
+## Objetivo
 
 El objetivo del proyecto es **registrar, organizar y documentar el aprendizaje obtenido al resolver máquinas virtuales de ciberseguridad**, permitiendo consultar posteriormente las herramientas utilizadas, las vulnerabilidades encontradas y el proceso de resolución de cada máquina.
 
