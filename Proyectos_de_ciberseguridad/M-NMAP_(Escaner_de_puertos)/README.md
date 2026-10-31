@@ -129,6 +129,6 @@ Utiliza la herramienta únicamente contra equipos, redes y sistemas propios o pa
 - Desarrollar una interfaz gráfica.
 - Mejorar la identificación de estados de los puertos.
 
-## Autor
+## Autor - GERARDO GONZÁLEZ
 
 Desarrollado como proyecto personal de aprendizaje en ciberseguridad utilizando Python.
