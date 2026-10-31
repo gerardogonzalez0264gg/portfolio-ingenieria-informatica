@@ -32,7 +32,7 @@
 Clona el repositorio:
 
 ```bash
-git clone https://github.com/TU_USUARIO/M-NMAP.git
+git clone https://github.com/gerardogonzalez0264gg/M-NMAP.git
 ```
 
 Accede a la carpeta del proyecto:
