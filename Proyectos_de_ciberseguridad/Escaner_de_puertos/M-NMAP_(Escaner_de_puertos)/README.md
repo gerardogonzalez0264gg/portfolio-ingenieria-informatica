@@ -38,7 +38,7 @@ git clone https://github.com/gerardogonzalez0264gg/portfolio-ingenieria-informat
 Accede a la carpeta del proyecto:
 
 ```bash
-cd portfolio-ingenieria-informatica/Proyectos_de_ciberseguridad/Escaner_de_puertos/M-NMAP_\(Escaner_de_puertos\)
+cd portfolio-ingenieria-informatica/Proyectos_de_ciberseguridad/Escaner_de_puertos/M-NMAP_(Escaner_de_puertos)
 ```
 
 ## Uso
