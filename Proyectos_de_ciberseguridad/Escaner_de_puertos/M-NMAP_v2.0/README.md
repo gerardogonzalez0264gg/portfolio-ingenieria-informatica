@@ -111,7 +111,7 @@ Esta herramienta fue desarrollada con fines educativos.
 
 Utiliza M-NMAP únicamente contra equipos, redes o sistemas propios o sobre los cuales tengas autorización para realizar pruebas.
 
-## Autor
+## Autor - GERARDO GONZÁLEZ
 
 Proyecto personal de aprendizaje en Python y ciberseguridad.
 
