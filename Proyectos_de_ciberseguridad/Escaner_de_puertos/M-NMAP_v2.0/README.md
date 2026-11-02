@@ -1,21 +1,24 @@
 # M-NMAP v2.0 – Escáner de Puertos TCP en Python
 
-**M-NMAP v2.0** es la segunda versión de una herramienta de escaneo de puertos TCP desarrollada en Python e inspirada en funcionalidades de Nmap.
+**M-NMAP v2.0** es una herramienta de escaneo de puertos TCP desarrollada en Python e inspirada en funcionalidades de Nmap.
 
-Esta versión incorpora mejoras respecto a la versión inicial, incluyendo escaneo concurrente, selección de puertos, configuración de velocidad, identificación de servicios y detección básica de versiones mediante Banner Grabbing.
+Esta segunda versión incorpora mejoras en el escaneo concurrente, selección de puertos, identificación de servicios, detección básica de versiones y generación de informes.
 
-El proyecto tiene fines educativos y busca fortalecer conocimientos sobre Python, redes informáticas y ciberseguridad.
+Proyecto desarrollado con fines educativos para fortalecer conocimientos sobre Python, redes informáticas y ciberseguridad.
 
-## Novedades de la versión 2.0
+## Características principales
 
-- Incorporación de escaneo concurrente mediante ThreadPoolExecutor.
+- Escaneo de puertos TCP.
 - Selección de puertos específicos y rangos personalizados.
-- Escaneo de todos los puertos TCP (1–65535).
+- Escaneo completo de puertos TCP (1–65535).
 - Escaneo rápido de puertos comunes.
+- Ejecución concurrente mediante ThreadPoolExecutor.
 - Configuración de velocidad de escaneo (T1–T5).
 - Identificación convencional de servicios.
 - Detección básica de información mediante Banner Grabbing.
-- Modo detallado para visualizar resultados.
+- Soporte básico para conexiones HTTPS/TLS.
+- Visualización del progreso del escaneo.
+- Exportación de resultados en formatos TXT y JSON.
 - Resumen de puertos abiertos y tiempo de ejecución.
 
 ## Tecnologías utilizadas
@@ -24,7 +27,9 @@ El proyecto tiene fines educativos y busca fortalecer conocimientos sobre Python
 - Socket.
 - Argparse.
 - Concurrent.futures.
-- Time.
+- JSON.
+- SSL.
+- Datetime.
 
 No requiere instalar librerías externas.
 
@@ -35,16 +40,16 @@ No requiere instalar librerías externas.
 
 ## Instalación
 
-Clona el repositorio:
+Clona el repositorio principal:
 
 ```bash
-git clone https://github.com/gerardogonzalez0264gg/M-NMAP.git
+git clone https://github.com/gerardogonzalez0264gg/portfolio-ingenieria-informatica.git
 ```
 
-Ingresa al directorio:
+Ingresa al directorio del proyecto:
 
 ```bash
-cd M-NMAP
+cd portfolio-ingenieria-informatica/Proyectos_de_ciberseguridad/Escaner_de_puertos/M-NMAP_v2.0
 ```
 
 ## Uso
@@ -73,7 +78,7 @@ Escaneo de todos los puertos TCP:
 python M-NMAP.py 127.0.0.1 -p-
 ```
 
-Escaneo rápido:
+Escaneo rápido de puertos comunes:
 
 ```bash
 python M-NMAP.py 127.0.0.1 -F
@@ -97,11 +102,24 @@ Configuración de velocidad:
 python M-NMAP.py 127.0.0.1 -T4
 ```
 
+Exportar resultados en TXT:
+
+```bash
+python M-NMAP.py 127.0.0.1 -o informe.txt
+```
+
+Exportar resultados en JSON:
+
+```bash
+python M-NMAP.py 127.0.0.1 -o informe.json --format json
+```
+
 ## Limitaciones
 
 - Realiza escaneos mediante conexiones TCP.
 - La identificación de servicios se basa en asociaciones convencionales de puertos.
 - La detección de versiones es básica y depende de las respuestas de los servicios.
+- La detección HTTPS/TLS no garantiza identificar el software o su versión.
 - No implementa detección de sistemas operativos.
 - No garantiza distinguir entre puertos cerrados y filtrados.
 
@@ -111,8 +129,16 @@ Esta herramienta fue desarrollada con fines educativos.
 
 Utiliza M-NMAP únicamente contra equipos, redes o sistemas propios o sobre los cuales tengas autorización para realizar pruebas.
 
+## Ubicación en GitHub
+
+Repositorio: [portfolio-ingenieria-informatica](https://github.com/gerardogonzalez0264gg/portfolio-ingenieria-informatica)
+
+Ruta del proyecto:
+
+`Proyectos_de_ciberseguridad/Escaner_de_puertos/M-NMAP_v2.0/`
+
 ## Autor - GERARDO GONZÁLEZ
 
 Proyecto personal de aprendizaje en Python y ciberseguridad.
 
-**Versión actual: 2.0**
+**Versión: 2.0**
