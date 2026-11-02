@@ -29,16 +29,16 @@
 
 ## Instalación
 
-Clona el repositorio:
+Clona el repositorio principal:
 
 ```bash
-git clone https://github.com/gerardogonzalez0264gg/M-NMAP.git
+git clone https://github.com/gerardogonzalez0264gg/portfolio-ingenieria-informatica.git
 ```
 
 Accede a la carpeta del proyecto:
 
 ```bash
-cd M-NMAP
+cd portfolio-ingenieria-informatica/Proyectos_de_ciberseguridad/Escaner_de_puertos/M-NMAP_\(Escaner_de_puertos\)
 ```
 
 ## Uso
