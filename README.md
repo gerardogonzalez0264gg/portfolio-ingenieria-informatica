@@ -132,7 +132,7 @@ Busco aplicar lo aprendido en proyectos prácticos y seguir desarrollando habili
 ## Contacto
 
 - **Nombre:** Gerardo Alonso González González.
-- **Ubicación:** Chile.
+- **Ubicación:** Santiago de Chile.
 - **LinkedIn:** [Mi perfil de LinkedIn](https://www.linkedin.com/in/gerardo-gonz%C3%A1lez-gonz%C3%A1lez-287392360/)
 - **GitHub:** [gerardogonzalez0264gg](https://github.com/gerardogonzalez0264gg)
 - **Correo:** gerardo.gonzalez0264@gmail.com
