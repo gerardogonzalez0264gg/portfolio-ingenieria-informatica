@@ -1,8 +1,13 @@
+
 # M-NMAP — Escáner de Puertos TCP en Python
 
-M-NMAP es una herramienta de escaneo de puertos TCP desarrollada en Python e inspirada en Nmap. Permite analizar hosts de una red, identificar puertos abiertos, reconocer servicios y obtener información mediante técnicas básicas de Banner Grabbing.
+## Descripción
 
-Este proyecto fue desarrollado con fines educativos para fortalecer conocimientos sobre programación en Python, redes informáticas y ciberseguridad.
+M-NMAP es una herramienta de escaneo de puertos TCP desarrollada en Python e inspirada en Nmap. Permite analizar hosts de una red, identificar puertos abiertos, reconocer servicios y obtener información mediante técnicas de Banner Grabbing.
+
+## Objetivo
+
+Desarrollar una herramienta de escaneo de puertos TCP que permita analizar hosts, identificar servicios y obtener información básica de los dispositivos de una red, aplicando conocimientos de programación Python, protocolos de red y ciberseguridad.
 
 ## Características principales
 
@@ -13,8 +18,8 @@ Este proyecto fue desarrollado con fines educativos para fortalecer conocimiento
 - Escaneo rápido de puertos comunes.
 - Ejecución concurrente mediante `ThreadPoolExecutor`.
 - Configuración de velocidad de escaneo (T1–T5).
-- Identificación básica de servicios.
-- Banner Grabbing.
+- Identificación convencional de servicios.
+- Detección básica de información mediante Banner Grabbing.
 - Soporte básico para conexiones HTTPS/TLS.
 - Visualización del progreso del escaneo.
 - Modo detallado de ejecución.
@@ -78,13 +83,13 @@ python M-NMAP.py 127.0.0.1 -p 1-1000
 python M-NMAP.py 127.0.0.1 -p-
 ```
 
-### Escaneo rápido
+### Escaneo rápido de puertos comunes
 
 ```bash
 python M-NMAP.py 127.0.0.1 -F
 ```
 
-### Detección de servicios
+### Detección básica de versiones
 
 ```bash
 python M-NMAP.py 127.0.0.1 -sV
@@ -102,13 +107,13 @@ python M-NMAP.py 127.0.0.1 -v
 python M-NMAP.py 127.0.0.1 -T4
 ```
 
-### Exportar resultados a TXT
+### Exportar resultados en TXT
 
 ```bash
 python M-NMAP.py 127.0.0.1 -o informe.txt
 ```
 
-### Exportar resultados a JSON
+### Exportar resultados en JSON
 
 ```bash
 python M-NMAP.py 127.0.0.1 -o informe.json --format json
@@ -116,7 +121,7 @@ python M-NMAP.py 127.0.0.1 -o informe.json --format json
 
 ## Niveles de velocidad
 
-La herramienta dispone de cinco niveles de velocidad de escaneo:
+La herramienta dispone de cinco niveles de velocidad:
 
 | Nivel | Descripción |
 |---|---|
@@ -147,4 +152,4 @@ Utiliza M-NMAP únicamente en equipos, redes o sistemas propios o sobre los cual
 
 **Gerardo González**
 
-GitHub: [@gerardogonzalez0264gg](https://github.com/gerardogonzalez0264gg)
+GitHub: https://github.com/gerardogonzalez0264gg
