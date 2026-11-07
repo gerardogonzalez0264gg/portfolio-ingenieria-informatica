@@ -3,7 +3,7 @@
 
 ## Descripción
 
-Aplicación web desarrollada para registrar, organizar y documentar máquinas virtuales resueltas durante el aprendizaje de ciberseguridad. Permite consultar un catálogo de máquinas, realizar búsquedas y acceder a documentación técnica sobre los procedimientos utilizados para resolverlas.
+Aplicación web desarrollada para registrar, organizar y documentar máquinas virtuales resueltas de TryHackMe, durante el aprendizaje de ciberseguridad. Permite consultar un catálogo de máquinas, realizar búsquedas y acceder a documentación técnica sobre los procedimientos utilizados para resolverlas.
 
 ## Objetivo
 
