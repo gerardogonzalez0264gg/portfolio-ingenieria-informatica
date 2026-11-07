@@ -52,6 +52,4 @@ El archivo `CV.pdf` puede reemplazarse cuando se actualice el currículum.
 - GitHub: https://github.com/gerardogonzalez0264gg
 - LinkedIn: https://www.linkedin.com/in/gerardo-gonzález-gonzález-287392360/
 
-## Autor
 
-Gerardo González
