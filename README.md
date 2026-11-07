@@ -45,7 +45,7 @@ Aplicación web para la gestión de recursos humanos, desarrollada con una arqui
 
 **Tecnologías:** Java, Spring Boot, Spring Data JPA, Spring Security, React, Vite, JavaScript, HTML, CSS y H2 Database.
 
-**Ubicación:** `Desarrollo_de_Software/App_RRHH_+_API_REST`
+**Ubicación:** `Desarrollo_de_Software/App_RRHH_+_API_REST (Es el que dice versión 2.0 el mas avanzado)`
 
 ### 3. SecureBank API
 
