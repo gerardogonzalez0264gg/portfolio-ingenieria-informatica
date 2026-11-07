@@ -1,6 +1,6 @@
-# Máquinas Completadas 2.0
+# Máquinas Completadas 
 
-Versión mejorada del proyecto **Maquinas_Completadas**, creado para registrar y documentar máquinas virtuales resueltas durante el aprendizaje de ciberseguridad.
+Creado para registrar y documentar máquinas virtuales resueltas durante el aprendizaje de ciberseguridad.
 
 ## Objetivo
 
