@@ -1,218 +1,141 @@
 
 # Portafolio de Ingeniería en Informática
 
-Bienvenido a mi portafolio de Ingeniería en Informática.
+Este repositorio reúne algunos de los proyectos que he desarrollado durante mi formación en Ingeniería en Informática, junto con prácticas y laboratorios relacionados con distintas áreas de la tecnología.
 
-En este repositorio comparto proyectos académicos, proyectos personales, laboratorios y prácticas que he desarrollado durante mi formación, principalmente en las áreas de desarrollo de software, ciberseguridad, redes, cloud y DevSecOps.
-
-La idea de este espacio es reunir mi trabajo, mostrar lo que he aprendido y seguir incorporando nuevos proyectos a medida que avanzo en mi formación.
+Mis principales áreas de interés son la ciberseguridad, el desarrollo de software, las redes, el análisis de datos y el Cloud Computing.
 
 ## Sobre mí
 
-Soy **Gerardo Alonso González González**, estudiante de Ingeniería en Informática en la **Universidad Bernardo O’Higgins (UBO)**.
+Mi nombre es Gerardo Alonso González González y soy estudiante de Ingeniería en Informática en la Universidad Bernardo O’Higgins (UBO), Chile.
 
-Durante mi formación he trabajado en distintas áreas de la informática, desarrollando conocimientos en:
+Me interesa seguir desarrollándome en el área tecnológica, especialmente en ciberseguridad, sin dejar de fortalecer mis conocimientos en programación, redes y servicios cloud.
 
-- Desarrollo de software.
-- Ciberseguridad.
-- Redes informáticas.
-- Cloud Computing.
-- DevOps y DevSecOps.
-- Linux.
-- Análisis de datos.
-- Programación.
-
-Actualmente, mi principal interés está en la ciberseguridad, sin dejar de lado el desarrollo de software, las redes y las tecnologías cloud.
+Me gusta aprender mediante proyectos prácticos, laboratorios y experimentación con distintas herramientas.
 
 ## Proyectos destacados
 
-### 1. Máquinas Completadas — Ciberseguridad
+### 1. Máquinas de Ciberseguridad
 
-**Objetivo:** Organizar y documentar las máquinas y salas de TryHackMe que he completado, registrando las herramientas, técnicas y procedimientos utilizados durante cada laboratorio.
+Proyecto enfocado en documentar máquinas y laboratorios de ciberseguridad, incluyendo procedimientos, herramientas utilizadas y aprendizajes obtenidos durante su resolución.
 
-**Descripción:**
+**Contenido principal:**
+- Reconocimiento y enumeración.
+- Análisis de servicios y puertos.
+- Identificación de vulnerabilidades.
+- Explotación de vulnerabilidades en entornos controlados.
+- Documentación de procedimientos y resultados.
 
-Aplicación web que permite consultar y organizar máquinas de ciberseguridad, además de visualizar documentación técnica sobre su resolución mediante walkthroughs.
-
-**Tecnologías y herramientas:**
-- HTML, CSS y JavaScript.
-- Linux.
-- Nmap.
-- Gobuster.
-- Burp Suite.
-- Netcat.
-- TryHackMe.
+**Herramientas:** Linux, Nmap, Gobuster, Burp Suite y Netcat.
 
 **Ubicación:** `Proyectos_de_ciberseguridad`
 
----
+### 2. App RRHH + API REST
 
-### 2. App RRHH + API REST — Desarrollo de Software
+Aplicación web para la gestión de recursos humanos, desarrollada con una arquitectura de frontend y backend separados.
 
-**Objetivo:** Desarrollar una aplicación web para administrar empleados, aplicando conocimientos de desarrollo frontend, backend, bases de datos y seguridad.
+**Funcionalidades principales:**
+- Gestión de usuarios y empleados.
+- Operaciones CRUD.
+- Registro y consulta de salarios.
+- Historial salarial.
+- Validaciones de datos.
+- Autenticación y protección de contraseñas en el backend.
+- Manejo de errores y organización por capas.
 
-**Descripción:**
-
-Sistema de gestión de recursos humanos que permite administrar información de empleados mediante una interfaz desarrollada con React y un backend construido con Spring Boot.
-
-Incluye funcionalidades como:
-
-- Registro, consulta, edición y eliminación de empleados.
-- Gestión de usuarios.
-- Modificación de salarios.
-- Historial de cambios salariales.
-- Validación de datos.
-- Autenticación implementada en el backend.
-- Protección de contraseñas mediante Spring Security.
-- Manejo de errores.
-
-**Tecnologías:**
-
-Backend:
-- Java.
-- Spring Boot.
-- Spring Data JPA.
-- Spring Security.
-- Maven.
-
-Frontend:
-- React.
-- Vite.
-- JavaScript.
-- HTML y CSS.
-
-Base de datos:
-- H2 Database.
+**Tecnologías:** Java, Spring Boot, Spring Data JPA, Spring Security, React, Vite, JavaScript, HTML, CSS y H2 Database.
 
 **Ubicación:** `Desarrollo_de_Software/App_RRHH_+_API_REST`
 
----
+### 3. SecureBank API
 
-### 3. SecureBank API — DevSecOps
+Proyecto enfocado en el desarrollo de una API y la aplicación de prácticas DevSecOps durante el ciclo de desarrollo.
 
-**Objetivo:** Aplicar prácticas de DevSecOps durante el desarrollo de una API, incorporando automatización, pruebas y seguridad dentro del proceso de desarrollo.
+**Contenido principal:**
+- Desarrollo de una API con Node.js.
+- Gestión de dependencias con npm.
+- Control de versiones con Git y GitHub.
+- Automatización de procesos mediante GitHub Actions.
+- Implementación de flujos CI/CD.
 
-**Descripción:**
+**Estado:** En desarrollo.
 
-Proyecto académico enfocado en integrar prácticas de desarrollo y seguridad mediante un flujo de trabajo automatizado con GitHub Actions.
+**Repositorio:** [SecureBank API](https://github.com/gerardogonzalez0264gg/securebank-api)
 
-Actualmente se encuentra en desarrollo.
+## Conocimientos y herramientas
 
-**Tecnologías y herramientas:**
-- Node.js.
-- npm.
-- Git y GitHub.
-- GitHub Actions.
-- CI/CD.
-- DevSecOps.
-
-**Repositorio:** https://github.com/gerardogonzalez0264gg/securebank-api
-
----
-
-## Áreas de aprendizaje
-
-Además de los proyectos destacados, continúo trabajando y aprendiendo en distintas áreas de la informática.
+Durante mi formación en Ingeniería en Informática he trabajado con distintas tecnologías y herramientas en las siguientes áreas:
 
 ### Ciberseguridad
 
-- Seguridad web.
-- Reconocimiento y enumeración.
-- Análisis de vulnerabilidades.
-- Pentesting.
-- Linux.
-- Laboratorios de TryHackMe.
-- Seguridad de aplicaciones.
+- **Sistemas y entornos:** Linux, Parrot OS, Kali Linux y máquinas virtuales.
+- **Reconocimiento y escaneo:** Nmap, Masscan y Netdiscover.
+- **Enumeración:** Gobuster, Dirb, Enum4linux y SMBClient.
+- **Análisis web:** Burp Suite, OWASP ZAP y WhatWeb.
+- **Análisis de red:** Wireshark, Tcpdump y Netcat.
+- **Auditoría de contraseñas:** Hydra y John the Ripper.
+- **Análisis de archivos:** strings, file y Binwalk.
+- **Práctica:** TryHackMe, laboratorios de pentesting y análisis de vulnerabilidades.
+- **Desarrollo de herramientas:** Python y M-NMAP, escáner de puertos TCP propio.
 
 ### Desarrollo de software
 
-- Python.
-- Java.
-- JavaScript.
+- Python, Java y JavaScript.
 - HTML y CSS.
-- React.
-- Flask.
-- Spring Boot.
-- APIs REST.
-- SQL.
+- React y Vite.
+- Flask y Spring Boot.
+- APIs REST y SQL.
 
 ### Redes informáticas
 
 - Cisco Packet Tracer.
-- Redes LAN.
-- VLAN.
-- Direccionamiento IP.
-- Protocolos de red.
-- Configuración de dispositivos.
-- Servicios de red.
+- TCP/IP, LAN y VLAN.
+- Direccionamiento IP y protocolos de red.
+- Configuración de dispositivos y servicios de red.
 
-### Análisis y minería de datos
+### Análisis de datos
 
-- Python.
-- Pandas.
-- NumPy.
-- Matplotlib.
-- Scikit-learn.
-- Jupyter Notebook.
-- Google Colab.
+- Python, Pandas y NumPy.
+- Matplotlib y Scikit-learn.
+- Jupyter Notebook y Google Colab.
 - Looker Studio.
 
-### Cloud Computing
+### Cloud y DevSecOps
 
-- AWS.
-- Servicios cloud.
-- Arquitectura cloud.
-- Modelos CAPEX y OPEX.
-- Servicios de infraestructura.
-
-## Tecnologías y herramientas
-
-Estas son algunas de las tecnologías y herramientas que he utilizado durante mi formación:
-
-**Desarrollo:** Python, Java, JavaScript, React, Flask, Spring Boot, HTML y CSS.
-
-**Ciberseguridad:** Linux, TryHackMe, Nmap, Gobuster, Burp Suite y Netcat.
-
-**Redes:** Cisco Packet Tracer, TCP/IP, LAN y VLAN.
-
-**Datos:** Pandas, NumPy, Matplotlib, Scikit-learn, Jupyter y Looker Studio.
-
-**DevOps y DevSecOps:** Git, GitHub, GitHub Actions, CI/CD y npm.
-
-**Cloud:** AWS y Cloud Computing.
+- AWS y servicios de infraestructura cloud.
+- Git y GitHub.
+- GitHub Actions y CI/CD.
+- npm y automatización de flujos de trabajo.
+- Fundamentos de DevOps y DevSecOps.
 
 ## Formación académica
 
 **Ingeniería en Informática**  
 Universidad Bernardo O’Higgins (UBO).
 
-Actualmente continúo mi formación mediante asignaturas universitarias, proyectos académicos, laboratorios prácticos y estudio independiente.
-
 ## Actualmente aprendiendo
 
-Estoy enfocando mi aprendizaje en fortalecer mis conocimientos en:
-
-- Ciberseguridad y Pentesting.
-- CompTIA Security+.
+- Ciberseguridad y pentesting.
 - Seguridad de aplicaciones.
+- Preparación para CompTIA Security+.
 - Cloud Computing y AWS.
-- DevSecOps y CI/CD.
-- Redes y Linux.
+- DevSecOps y automatización CI/CD.
+- Desarrollo backend.
+- Redes y administración de sistemas Linux.
 
 ## Objetivo profesional
 
-Mi objetivo es seguir desarrollándome en el área de tecnologías de la información, especializándome principalmente en ciberseguridad y fortaleciendo mis conocimientos en redes, cloud y desarrollo de software.
+Continuar fortaleciendo mis conocimientos y experiencia en el área tecnológica, con especial interés en la ciberseguridad, la seguridad de aplicaciones y la infraestructura cloud.
 
-Este repositorio representa parte de mi aprendizaje y el trabajo que he realizado durante mi formación como futuro profesional de la informática.
+Busco aplicar lo aprendido en proyectos prácticos y seguir desarrollando habilidades que me permitan crecer profesionalmente.
 
 ## Contacto
 
-**Gerardo Alonso González González**
-
-- País: Chile.
-- LinkedIn: https://www.linkedin.com/in/gerardo-gonzález-gonzález-287392360/
-- GitHub: https://github.com/gerardogonzalez0264gg
-- Correo: gerardo.gonzalez0264@gmail.com
+- **Nombre:** Gerardo Alonso González González.
+- **Ubicación:** Chile.
+- **LinkedIn:** [Mi perfil de LinkedIn](https://www.linkedin.com/in/gerardo-gonz%C3%A1lez-gonz%C3%A1lez-287392360/)
+- **GitHub:** [gerardogonzalez0264gg](https://github.com/gerardogonzalez0264gg)
+- **Correo:** gerardo.gonzalez0264@gmail.com
 
 ---
 
