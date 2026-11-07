@@ -1,34 +1,49 @@
-# Portafolio Web — Gerardo González
+# Portafolio Profesional — Gerardo González
 
-Versión_2.0 del Portafolio personal desarrollado con HTML y CSS para presentar mi perfil como estudiante de Ingeniería Informática, mis proyectos, habilidades, formación práctica y certificaciones.
+Portafolio web personal desarrollado para presentar mi perfil como estudiante de Ingeniería Informática, mostrando mis conocimientos técnicos, proyectos, formación académica, certificaciones y experiencia laboral.
 
 ## Contenido
 
-- Inicio y presentación personal.
-- Sobre mí.
+- Presentación personal.
+- Información sobre mi formación en Ingeniería Informática.
 - Habilidades técnicas.
 - Experiencia laboral en análisis y gestión de información.
-- Tres proyectos destacados y un enlace al repositorio completo de GitHub.
-- Nueve certificaciones con enlaces a sus credenciales.
-- Contacto y enlaces profesionales.
+- Proyectos destacados.
+- Acceso al repositorio completo de GitHub.
+- Certificaciones y formación complementaria.
+- Información de contacto.
+- Enlaces a perfiles profesionales.
 
-## Tecnologías
+## Tecnologías utilizadas
 
-- HTML5
-- CSS3
-- Diseño adaptable a móviles y escritorio
+- HTML5.
+- CSS3.
 
-## Cómo abrirlo
+## Características
+
+- Diseño adaptable a dispositivos móviles y escritorio.
+- Organización de contenido por secciones.
+- Presentación de proyectos y habilidades.
+- Enlaces a certificaciones y credenciales.
+- Acceso a perfiles profesionales.
+
+## Cómo ejecutar
 
 1. Descarga o clona el repositorio.
-2. Mantén `index.html`, `style.css` y `CV.pdf` en la misma carpeta.
-3. Abre `index.html` en tu navegador.
+2. Ubica los archivos `index.html`, `style.css` y `CV.pdf` en la misma carpeta.
+3. Abre `index.html` desde cualquier navegador web.
 
 ## Personalización
 
-Actualiza el archivo `CV.pdf` cuando renueves tu currículum. Revisa periódicamente los enlaces de proyectos y las fechas de las certificaciones.
+Los archivos HTML y CSS permiten actualizar la información personal, proyectos, habilidades y diseño del portafolio.
 
-## Perfiles
+El archivo `CV.pdf` puede reemplazarse cuando se actualice el currículum.
+
+## Perfiles profesionales
 
 - GitHub: https://github.com/gerardogonzalez0264gg
 - LinkedIn: https://www.linkedin.com/in/gerardo-gonz%C3%A1lez-gonz%C3%A1lez-287392360/
+
+## Autor
+
+Gerardo González
