@@ -26,7 +26,7 @@ Proyecto enfocado en documentar máquinas y laboratorios de ciberseguridad, incl
 - Explotación de vulnerabilidades en entornos controlados.
 - Documentación de procedimientos y resultados.
 
-**Herramientas:** Linux, Nmap, Gobuster, Burp Suite, Netcat, etc.
+**Herramientas:** Linux, Nmap, Gobuster, Burp Suite, Netcat, entre otras.
 
 **Ubicación:** `Proyectos_de_ciberseguridad`
 
