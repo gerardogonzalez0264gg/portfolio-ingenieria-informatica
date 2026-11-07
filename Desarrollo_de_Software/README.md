@@ -1,16 +1,16 @@
-# 💻 Desarrollo de Software
+# Desarrollo de Software
 
-## 🎯 Objetivo
+## Objetivo
 
 Reunir proyectos de desarrollo de software que permitan aplicar conocimientos de programación, diseño de aplicaciones, gestión de datos y construcción de soluciones tecnológicas.
 
-## 📌 Sobre esta sección
+## Sobre esta sección
 
 En este espacio se encuentran proyectos académicos y personales enfocados en el desarrollo de aplicaciones, desde la implementación de funcionalidades hasta la integración de componentes frontend y backend.
 
 Cada proyecto representa una oportunidad para fortalecer mis habilidades técnicas y aplicar buenas prácticas de desarrollo.
 
-## 🛠️ Tecnologías y herramientas
+## Tecnologías y herramientas
 
 * Java
 * Python
@@ -23,7 +23,7 @@ Cada proyecto representa una oportunidad para fortalecer mis habilidades técnic
 
 *Las tecnologías utilizadas dependen de cada proyecto.*
 
-## 📂 Proyectos
+## Proyectos
 
 Los proyectos de esta sección pueden incluir:
 
@@ -33,7 +33,7 @@ Los proyectos de esta sección pueden incluir:
 * Aplicaciones con conexión a bases de datos.
 * Proyectos de programación y lógica computacional.
 
-## 🧠 Habilidades en desarrollo
+## Habilidades en desarrollo
 
 * Programación y resolución de problemas.
 * Desarrollo frontend y backend.
@@ -42,7 +42,7 @@ Los proyectos de esta sección pueden incluir:
 * Control de versiones con Git y GitHub.
 * Organización y documentación de proyectos.
 
-## 🚀 Evolución de los proyectos
+## Evolución de los proyectos
 
 Los repositorios se irán actualizando con nuevas funcionalidades, mejoras de código y documentación, reflejando mi crecimiento como estudiante de Ingeniería Informática.
 
