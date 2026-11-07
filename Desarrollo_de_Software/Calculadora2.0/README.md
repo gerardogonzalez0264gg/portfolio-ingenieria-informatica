@@ -1,4 +1,4 @@
-# Calculadora 2.0
+# Calculadora 
 
 Proyecto desarrollado con **HTML, CSS y JavaScript** que permite realizar operaciones matemáticas básicas a través de una interfaz web. La calculadora permite ingresar números y realizar operaciones de suma, resta, multiplicación y división.
 
