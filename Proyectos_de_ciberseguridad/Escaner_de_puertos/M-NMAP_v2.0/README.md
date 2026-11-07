@@ -45,3 +45,5 @@ Clona el repositorio:
 
 ```bash
 git clone https://github.com/gerardogonzalez0264gg/portfolio-ingenieria-informatica.git
+
+cd portfolio-ingenieria-informatica/Proyectos_de_ciberseguridad/Escaner_de_puertos/M-NMAP_v2.0
