@@ -1,149 +1,149 @@
-# M-NMAP — TCP Port Scanner
+# M-NMAP — Escáner de Puertos TCP en Python
 
-M-NMAP is a TCP port scanning tool developed in Python, inspired by Nmap. It allows users to scan network hosts, identify open ports, perform basic service detection, and retrieve service information through Banner Grabbing.
+M-NMAP es una herramienta de escaneo de puertos TCP desarrollada en Python e inspirada en Nmap. Permite analizar hosts de una red, identificar puertos abiertos, reconocer servicios y obtener información mediante técnicas básicas de Banner Grabbing.
 
-This project was developed for educational purposes to strengthen knowledge of Python programming, computer networking, and cybersecurity.
+Este proyecto fue desarrollado con fines educativos para fortalecer conocimientos sobre programación en Python, redes informáticas y ciberseguridad.
 
-## Features
+## Características principales
 
-- TCP port scanning.
-- Custom port selection.
-- Custom port range scanning.
-- Full TCP port scanning (1–65535).
-- Fast scanning of common ports.
-- Concurrent scanning using `ThreadPoolExecutor`.
-- Configurable scanning speed (T1–T5).
-- Basic service identification.
+- Escaneo de puertos TCP.
+- Selección de puertos específicos.
+- Escaneo de rangos personalizados.
+- Escaneo completo de puertos TCP (1–65535).
+- Escaneo rápido de puertos comunes.
+- Ejecución concurrente mediante `ThreadPoolExecutor`.
+- Configuración de velocidad de escaneo (T1–T5).
+- Identificación básica de servicios.
 - Banner Grabbing.
-- Basic HTTPS/TLS support.
-- Real-time scanning progress.
-- Detailed output mode.
-- Results export in TXT and JSON formats.
-- Summary of open ports and scan execution time.
+- Soporte básico para conexiones HTTPS/TLS.
+- Visualización del progreso del escaneo.
+- Modo detallado de ejecución.
+- Exportación de resultados en formatos TXT y JSON.
+- Resumen de puertos abiertos y tiempo de ejecución.
 
-## Technologies
+## Tecnologías utilizadas
 
-- Python 3.10+
-- Socket
-- Argparse
-- Concurrent.futures
-- JSON
-- SSL
-- Datetime
+- Python 3.10 o superior.
+- Socket.
+- Argparse.
+- Concurrent.futures.
+- JSON.
+- SSL.
+- Datetime.
 
-**Dependencies:** No external libraries required.
+**Dependencias:** No requiere instalar librerías externas.
 
-## Requirements
+## Requisitos
 
-- Python 3.10 or higher.
-- Windows, Linux, or macOS.
+- Python 3.10 o superior.
+- Windows, Linux o macOS.
 
-## Installation
+## Instalación
 
-Clone the repository:
+Clonar el repositorio:
 
 ```bash
 git clone https://github.com/gerardogonzalez0264gg/portfolio-ingenieria-informatica.git
 ```
 
-Navigate to the project directory:
+Ingresar al directorio del proyecto:
 
 ```bash
 cd portfolio-ingenieria-informatica/Proyectos_de_ciberseguridad/Escaner_de_puertos/M-NMAP_v2.0
 ```
 
-## Usage
+## Uso
 
-### Basic scan
+### Escaneo básico
 
 ```bash
 python M-NMAP.py 127.0.0.1
 ```
 
-### Scan specific ports
+### Escaneo de puertos específicos
 
 ```bash
 python M-NMAP.py 127.0.0.1 -p 22,80,443
 ```
 
-### Scan a port range
+### Escaneo de un rango de puertos
 
 ```bash
 python M-NMAP.py 127.0.0.1 -p 1-1000
 ```
 
-### Scan all TCP ports
+### Escaneo de todos los puertos TCP
 
 ```bash
 python M-NMAP.py 127.0.0.1 -p-
 ```
 
-### Fast scan
+### Escaneo rápido
 
 ```bash
 python M-NMAP.py 127.0.0.1 -F
 ```
 
-### Service detection
+### Detección de servicios
 
 ```bash
 python M-NMAP.py 127.0.0.1 -sV
 ```
 
-### Verbose mode
+### Modo detallado
 
 ```bash
 python M-NMAP.py 127.0.0.1 -v
 ```
 
-### Configure scanning speed
+### Configuración de velocidad
 
 ```bash
 python M-NMAP.py 127.0.0.1 -T4
 ```
 
-### Export results to TXT
+### Exportar resultados a TXT
 
 ```bash
-python M-NMAP.py 127.0.0.1 -o report.txt
+python M-NMAP.py 127.0.0.1 -o informe.txt
 ```
 
-### Export results to JSON
+### Exportar resultados a JSON
 
 ```bash
-python M-NMAP.py 127.0.0.1 -o report.json --format json
+python M-NMAP.py 127.0.0.1 -o informe.json --format json
 ```
 
-## Scanning Speed
+## Niveles de velocidad
 
-M-NMAP provides five scanning speed levels:
+La herramienta dispone de cinco niveles de velocidad de escaneo:
 
-| Level | Description |
+| Nivel | Descripción |
 |---|---|
-| T1 | Very slow |
-| T2 | Slow |
+| T1 | Muy lento |
+| T2 | Lento |
 | T3 | Normal |
-| T4 | Fast |
-| T5 | Very fast |
+| T4 | Rápido |
+| T5 | Muy rápido |
 
-Higher speeds may increase the possibility of missed responses depending on network conditions.
+Los niveles superiores permiten realizar escaneos más rápidos, aunque pueden aumentar la posibilidad de perder respuestas dependiendo de las condiciones de la red.
 
-## Limitations
+## Limitaciones
 
-- Supports TCP scanning only.
-- Service identification relies on conventional port associations.
-- Banner Grabbing depends on the responses provided by services.
-- HTTPS/TLS support does not guarantee software or version identification.
-- Does not implement operating system detection.
-- Cannot reliably distinguish filtered ports from closed ports in every situation.
+- Realiza únicamente escaneos TCP.
+- La identificación de servicios se basa en asociaciones convencionales de puertos.
+- Banner Grabbing depende de las respuestas entregadas por los servicios.
+- El soporte HTTPS/TLS no garantiza identificar el software o su versión.
+- No implementa detección de sistemas operativos.
+- No garantiza distinguir entre puertos cerrados y filtrados en todos los escenarios.
 
-## Security Notice
+## Consideraciones de seguridad
 
-This tool was developed for educational and authorized security testing purposes.
+Esta herramienta fue desarrollada con fines educativos y de pruebas de seguridad autorizadas.
 
-Only scan systems, networks, and devices that you own or have explicit permission to test.
+Utiliza M-NMAP únicamente en equipos, redes o sistemas propios o sobre los cuales tengas autorización para realizar escaneos.
 
-## Author
+## Autor
 
 **Gerardo González**
 
