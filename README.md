@@ -28,7 +28,7 @@ Proyecto enfocado en documentar máquinas y laboratorios de ciberseguridad, incl
 
 **Herramientas:** Linux, Nmap, Gobuster, Burp Suite, Netcat, entre otras.
 
-**Ubicación:** `Proyectos_de_ciberseguridad`
+**Ubicación:** `Desarrollo_de_Software/Maquinas_Completadas`
 
 ### 2. App RRHH + API REST
 
