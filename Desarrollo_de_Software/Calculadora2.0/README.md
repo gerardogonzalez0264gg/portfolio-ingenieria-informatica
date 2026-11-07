@@ -39,6 +39,3 @@ JavaScript procesa las operaciones matemáticas y muestra los resultados directa
 2. Ubicar los archivos del proyecto.
 3. Abrir el archivo `index.html` en un navegador web.
 
-## Autor
-
-Gerardo González
