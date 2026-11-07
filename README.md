@@ -15,7 +15,7 @@ Me gusta aprender mediante proyectos prácticos, laboratorios y experimentación
 
 ## Proyectos destacados
 
-### 1. Máquinas de Ciberseguridad
+### 1. Máquinas Completadas
 
 Proyecto enfocado en documentar máquinas y laboratorios de ciberseguridad, incluyendo procedimientos, herramientas utilizadas y aprendizajes obtenidos durante su resolución.
 
@@ -28,7 +28,7 @@ Proyecto enfocado en documentar máquinas y laboratorios de ciberseguridad, incl
 
 **Herramientas:** Linux, Nmap, Gobuster, Burp Suite, Netcat, entre otras.
 
-**Ubicación:** `Desarrollo_de_Software/Maquinas_Completadas`
+**Ubicación:** `Desarrollo_de_Software`
 
 ### 2. App RRHH + API REST
 
