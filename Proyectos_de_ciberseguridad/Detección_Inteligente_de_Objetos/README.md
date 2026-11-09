@@ -2,7 +2,7 @@
 
 Sistema de detección inteligente de objetos desarrollado en Python utilizando un modelo YOLO preentrenado.
 
-## 🎯 Objetivo
+## Objetivo
 
 El objetivo de este proyecto es implementar un sistema capaz de analizar una imagen, detectar objetos mediante inteligencia artificial y utilizar los resultados obtenidos para tomar una decisión.
 
@@ -10,7 +10,7 @@ El flujo principal del sistema es:
 
 **Imagen → Modelo YOLO → Detecciones → Datos → Decisión**
 
-## 🔍 ¿Qué hace el proyecto?
+## ¿Qué hace el proyecto?
 
 El sistema:
 
@@ -43,7 +43,7 @@ No se entrena un modelo nuevo. Se utiliza el modelo preentrenado para realizar l
 - Matplotlib
 - PIL (Python Imaging Library)
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
     Detector_YOLO/
     │
@@ -52,14 +52,14 @@ No se entrena un modelo nuevo. Se utiliza el modelo preentrenado para realizar l
     ├── yolo26n.pt
     └── README.md
 
-## ⚙️ Instalación
+## Instalación
 
 Instala las dependencias necesarias ejecutando:
 
     pip install ultralytics==8.4.104
     pip install pandas matplotlib pillow
 
-## ▶️ Uso
+## Uso
 
 Ejecuta el programa con:
 
@@ -67,7 +67,7 @@ Ejecuta el programa con:
 
 El programa analizará la imagen `imagen.jpg` y mostrará las detecciones realizadas por el modelo YOLO.
 
-## 🖼️ Utilizar una imagen propia
+## Utilizar una imagen propia
 
 El proyecto actualmente está preparado para trabajar con una sola imagen de entrada, debido a las limitaciones de la implementación actual.
 
@@ -87,7 +87,7 @@ El modelo analizará tu nueva imagen.
 
 > **Importante:** actualmente el código permite analizar una sola imagen a la vez.
 
-## 📊 Nivel de confianza
+## Nivel de confianza
 
 El sistema utiliza un umbral de confianza del **25%**:
 
@@ -97,7 +97,7 @@ Las detecciones con una confianza inferior al 25% son descartadas.
 
 Las detecciones que superan este umbral continúan siendo procesadas por el sistema.
 
-## 🧠 Lógica de decisión
+## Lógica de decisión
 
 Después de detectar los objetos, el sistema utiliza una lógica para tomar una decisión:
 
@@ -106,7 +106,7 @@ Después de detectar los objetos, el sistema utiliza una lógica para tomar una 
 - Si detecta otros objetos → `INFORMACIÓN`
 - Si no detecta objetos → `SIN DETECCIONES`
 
-## 📌 Funcionamiento
+## Funcionamiento
 
     Imagen
        ↓
@@ -122,7 +122,7 @@ Después de detectar los objetos, el sistema utiliza una lógica para tomar una 
        ↓
     Resultado final
 
-## 📚 Aprendizaje
+## Aprendizaje
 
 Este proyecto permite comprender cómo integrar un modelo de inteligencia artificial con Python para construir un sistema que:
 
