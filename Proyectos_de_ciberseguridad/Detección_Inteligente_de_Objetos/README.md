@@ -26,7 +26,7 @@ El sistema:
 7. Muestra los objetos detectados.
 8. Toma una decisión según los objetos encontrados.
 
-## 🤖 Modelo utilizado
+## Modelo utilizado
 
 El proyecto utiliza un modelo YOLO preentrenado mediante el archivo:
 
@@ -34,7 +34,7 @@ El proyecto utiliza un modelo YOLO preentrenado mediante el archivo:
 
 No se entrena un modelo nuevo. Se utiliza el modelo preentrenado para realizar la detección de objetos en las imágenes.
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - Python
 - YOLO
