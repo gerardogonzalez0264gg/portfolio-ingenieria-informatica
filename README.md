@@ -7,7 +7,7 @@ Mis principales áreas de interés son la ciberseguridad, el desarrollo de softw
 
 ## Sobre mí
 
-Mi nombre es Gerardo Alonso González González y soy estudiante de Ingeniería en Informática en la Universidad Bernardo O’Higgins (UBO), Chile.
+Mi nombre es Gerardo Alonso González González y soy estudiante de Ingeniería en Informática.
 
 Me interesa seguir desarrollándome en el área tecnológica, especialmente en ciberseguridad, sin dejar de fortalecer mis conocimientos en programación, redes y servicios cloud.
 
